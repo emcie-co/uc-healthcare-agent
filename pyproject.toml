@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "healthcare-parlant"
+version = "0.1.0"
+description = ""
+authors = ["yannemcie <yann@emcie.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.11"
+mypy = "1.15.0"
+
+#parlant-client = {path = "C:/Users/yann/OneDrive/Desktop/Projects/parlant_client-0.10.6-py3-none-any.whl"}
+#parlant-client = { git = "https://github.com/emcie-co/parlant-client-python", branch = "develop" }
+parlant = { git = "https://github.com/emcie-co/parlant", branch = "develop" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

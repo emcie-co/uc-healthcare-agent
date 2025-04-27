@@ -1,0 +1,46 @@
+{
+  "metadata": [
+    {
+      "id": "NyFwrR5uPt",
+      "version": "0.1.0"
+    }
+  ],
+  "utterances": [
+    {
+      "id": "ZygoctucU9",
+      "version": "0.1.0",
+      "creation_utc": "2025-04-08T09:30:04.153086+00:00",
+      "value": "Hi {{ std.customer.name }}, Yes, product A is available in stock.",
+      "fields": []
+    },
+    {
+      "id": "UzUWMMGZpx",
+      "version": "0.1.0",
+      "creation_utc": "2025-04-08T09:30:04.157602+00:00",
+      "value": "Hi {{ std.customer.name }}, Yes, product A is available in stock. We also have a 20% discount on it. Would you like to make a purchase?",
+      "fields": []
+    },
+    {
+      "id": "C6dq1F7JMh",
+      "version": "0.1.0",
+      "creation_utc": "2025-04-08T09:30:04.161599+00:00",
+      "value": "You can buy the product at the following stores:{% for location in locations %}\n- {{ location['location_street'] }} {% endfor %}",
+      "fields": []
+    },
+    {
+      "id": "DD6UatA8TV",
+      "version": "0.1.0",
+      "creation_utc": "2025-04-08T09:30:04.165113+00:00",
+      "value": "You can buy the product at the following stores: {% for location in locations %}\n- {{ location['location_street'] }} {% endfor %}\nbut the closest one is at {{ closest_location }}",
+      "fields": []
+    },
+    {
+      "id": "82sZK3vjwY",
+      "version": "0.1.0",
+      "creation_utc": "2025-04-08T09:30:04.168111+00:00",
+      "value": "We have {% for types in product_types %} {{ types['product_type_name'] }} {% endfor %}",
+      "fields": []
+    }
+  ],
+  "utterance_tag_associations": []
+}

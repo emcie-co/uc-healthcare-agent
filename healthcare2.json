@@ -1,0 +1,20 @@
+{
+    "utterances": [
+      {
+        "value": "Good morning {{std.customer_name}}, I'd be happy to help you schedule an appointment with {{doctor_name}}. What time works best for you?",
+        "tags": ["9b6t8F2o8V"]
+      },
+      {
+        "value": "You're welcome, {{std.customer_name}}. You'll receive a confirmation email shortly for your new appointment. Remember to bring your insurance card and a list of any medications you're currently taking. We look forward to seeing you!",
+        "tags": ["9b6t8F2o8V"]
+      },
+      {
+        "value": "Your doctor is {doctor_name}",
+        "tags": ["9b6t8F2o8V"]
+      },
+      {
+        "value":"Sure thing! Here are the availabilities for Dr. Chen: {% for slots in utterance_field.availabilities %} {{slots}} {% endfor %}. Which one would you like to book?",
+        "tags": ["9b6t8F2o8V"]
+      }
+    ]
+  }

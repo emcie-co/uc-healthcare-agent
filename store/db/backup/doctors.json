@@ -1,0 +1,144 @@
+[
+    {
+        "doctor": {
+            "name": "Dr. Chen",
+            "specialty": "Internal Medicine",
+            "practice_details": {
+                "ordering_privileges": [
+                    "basic metabolic panel"
+                ],
+                "scheduling": {
+                    "availability": [
+                        {
+                            "date": "2025-03-26",
+                            "times": [
+                                "10:30"
+                            ]
+                        },
+                        {
+                            "date": "2025-03-28",
+                            "times": [
+                                "09:30"
+                            ]
+                        },
+                        {
+                            "date": "2025-03-29",
+                            "times": [
+                                "10:30"
+                            ]
+                        },
+                        {
+                            "date": "2025-03-28",
+                            "times": [
+                                "10:15"
+                            ]
+                        },
+                        {
+                            "date": "2025-03-20",
+                            "times": [
+                                "13:00"
+                            ]
+                        },
+                        {
+                            "date": "2025-03-30",
+                            "times": [
+                                "10:30"
+                            ]
+                        }
+                    ],
+                    "appointment_duration": 30,
+                    "preparation_requirements": {
+                        "lab_work": "15 minutes before appointment"
+                    }
+                }
+            },
+            "patients": [
+                {
+                    "patient_id": "C9XHUuuk1J",
+                    "name": "Sarah Johnson",
+                    "relationship": "primary care",
+                    "last_visit": null,
+                    "upcoming_appointments": [
+                        {
+                            "date": "2025-03-26",
+                            "time": "09:30",
+                            "type": "regular checkup",
+                            "lab_work_ordered": "basic metabolic panel"
+                        },
+                        {
+                            "date": "2025-03-29",
+                            "time": "10:30",
+                            "type": "regular checkup",
+                            "lab_work_ordered": "basic metabolic panel"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "doctor": {
+            "name": "Dr. Chinois",
+            "specialty": "Internal Medicine",
+            "practice_details": {
+                "ordering_privileges": [
+                    "basic metabolic panel"
+                ],
+                "scheduling": {
+                    "availability": [
+                        {
+                            "date": "2025-03-26",
+                            "times": [
+                                "09:30"
+                            ]
+                        },
+                        {
+                            "date": "2025-03-28",
+                            "times": [
+                                "09:30"
+                            ]
+                        },
+                        {
+                            "date": "2025-03-29",
+                            "times": [
+                                "10:30"
+                            ]
+                        },
+                        {
+                            "date": "2025-03-28",
+                            "times": [
+                                "10:15"
+                            ]
+                        },
+                        {
+                            "date": "2025-03-20",
+                            "times": [
+                                "13:00"
+                            ]
+                        }
+                    ],
+                    "appointment_duration": 30,
+                    "preparation_requirements": {
+                        "lab_work": "15 minutes before appointment"
+                    }
+                }
+            },
+            "patients": [
+                {
+                    "patient_id": "P001",
+                    "name": "Maria Rodriguez",
+                    "relationship": "primary care",
+                    "last_visit": null,
+                    "upcoming_appointments": [
+                        {
+                            "date": "2025-03-28",
+                            "time": "10:15",
+                            "type": "regular checkup",
+                            "lab_work_ordered": "basic metabolic panel"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

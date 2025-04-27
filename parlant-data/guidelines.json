@@ -1,0 +1,156 @@
+{
+  "metadata": [
+    {
+      "id": "WjXhLds-ua",
+      "version": "0.4.0"
+    }
+  ],
+  "guidelines": [
+    {
+      "id": "ZIHCrWgNqJ",
+      "version": "0.4.0",
+      "creation_utc": "2025-03-16T12:13:33.925770+00:00",
+      "condition": "user starts the conversation",
+      "action": "get medical information",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "R4aEiHbKb9",
+      "version": "0.4.0",
+      "creation_utc": "2025-03-17T11:13:45.294252+00:00",
+      "condition": "user starts the conversation",
+      "action": "start by greeting them",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "a28RA0mWge",
+      "version": "0.4.0",
+      "creation_utc": "2025-03-25T10:24:04.065394+00:00",
+      "condition": "user requests to schedule an appointment and has appointments scheduled",
+      "action": "notify of the currently scheduled appointment and ask if they want to reschedule any of them or to schedule a new one",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "KKZDjeQIB3",
+      "version": "0.4.0",
+      "creation_utc": "2025-03-31T11:12:09.547126+00:00",
+      "condition": "user confirms the need to schedule a new appointment",
+      "action": "provide the doctors next two available time slots",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "f6O6EtioWv",
+      "version": "0.4.0",
+      "creation_utc": "2025-03-25T12:19:30.271172+00:00",
+      "condition": "user chooses time slot for new appointment schedule with their doctor",
+      "action": "assist and confirm the appointment in detail",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "wQVHEFGZvG",
+      "version": "0.4.0",
+      "creation_utc": "2025-04-27T13:54:03.718647+00:00",
+      "condition": "user requests to reschedule an appointment",
+      "action": "mention the appointments that are scheduled and ask which appointment they want to reschedule",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "zlGjOSgP0q",
+      "version": "0.4.0",
+      "creation_utc": "2025-04-27T13:43:00.919013+00:00",
+      "condition": "user selects the appointment they want to reschedule",
+      "action": "ask the user what day or time would work better for them to reschedule. Do not suggest time slots yet",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "zD4j1xrfZs",
+      "version": "0.4.0",
+      "creation_utc": "2025-04-27T13:45:07.520301+00:00",
+      "condition": "user provides a preferred day or time for rescheduling",
+      "action": "provide the doctor's next two available time slots based on the user's preference",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "GhI7h2YrNT",
+      "version": "0.4.0",
+      "creation_utc": "2025-04-27T13:49:54.919748+00:00",
+      "condition": "user chooses time slot for rescheduling appointment with their doctor",
+      "action": "assist and confirm the appointment in detail",
+      "enabled": true,
+      "metadata": {}
+    }
+  ],
+  "guideline_tag_associations": [
+    {
+      "id": "y55qrftDjK",
+      "version": "0.4.0",
+      "creation_utc": "2025-03-16T12:13:33.925770+00:00",
+      "guideline_id": "ZIHCrWgNqJ",
+      "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "zgAIkpdXeK",
+      "version": "0.4.0",
+      "creation_utc": "2025-03-17T11:13:45.294252+00:00",
+      "guideline_id": "R4aEiHbKb9",
+      "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "aojeu5ZCPq",
+      "version": "0.4.0",
+      "creation_utc": "2025-03-25T10:24:04.065394+00:00",
+      "guideline_id": "a28RA0mWge",
+      "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "lP5pX7DAqS",
+      "version": "0.4.0",
+      "creation_utc": "2025-03-25T12:19:30.271172+00:00",
+      "guideline_id": "f6O6EtioWv",
+      "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "LWOOsEC1hU",
+      "version": "0.4.0",
+      "creation_utc": "2025-03-31T11:12:09.547126+00:00",
+      "guideline_id": "KKZDjeQIB3",
+      "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "eEi9WeFPtT",
+      "version": "0.4.0",
+      "creation_utc": "2025-04-27T13:43:00.919013+00:00",
+      "guideline_id": "zlGjOSgP0q",
+      "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "BvOefw7h2l",
+      "version": "0.4.0",
+      "creation_utc": "2025-04-27T13:45:07.520301+00:00",
+      "guideline_id": "zD4j1xrfZs",
+      "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "nbZB9YrUv6",
+      "version": "0.4.0",
+      "creation_utc": "2025-04-27T13:49:54.919748+00:00",
+      "guideline_id": "GhI7h2YrNT",
+      "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "r-O5NxpKts",
+      "version": "0.4.0",
+      "creation_utc": "2025-04-27T13:54:03.718647+00:00",
+      "guideline_id": "wQVHEFGZvG",
+      "tag_id": "9b6t8F2o8V"
+    }
+  ]
+}

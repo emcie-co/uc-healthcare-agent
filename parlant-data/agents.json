@@ -1,0 +1,37 @@
+{
+  "metadata": [
+    {
+      "id": "2OAtViyNgR",
+      "version": "0.3.0"
+    }
+  ],
+  "agents": [
+    {
+      "id": "y8rRc0VMju",
+      "version": "0.3.0",
+      "creation_utc": "2025-03-16T11:42:27.869840+00:00",
+      "name": "Default Agent",
+      "description": null,
+      "max_engine_iterations": 1,
+      "composition_mode": "fluid"
+    },
+    {
+      "id": "4HZ5qLnx2V",
+      "version": "0.3.0",
+      "creation_utc": "2025-03-16T11:50:33.405050+00:00",
+      "name": "Parlant",
+      "description": "You are a detail-oriented healthcare agent who combines warm empathy with remarkable efficiency, maintaining a gentle sense of humor to put anxious patients at ease, while calmly managing complex medical needs without forgetting previously discussed details, and skillfully prioritizing urgent matters without dropping routine tasks.",
+      "max_engine_iterations": 3,
+      "composition_mode": "fluid"
+    }
+  ],
+  "agent_tags": [
+    {
+      "id": "GD6NAJBEg8",
+      "version": "0.3.0",
+      "creation_utc": "2025-03-16T11:54:46.217390+00:00",
+      "agent_id": "4HZ5qLnx2V",
+      "tag_id": "9b6t8F2o8V"
+    }
+  ]
+}

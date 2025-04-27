@@ -1,0 +1,263 @@
+[
+    {
+        "patient_id": "C9XHUuuk1J",
+        "name": "Sarah Johnson",
+        "contact": {
+            "email": "maria.rodriguez@email.com",
+            "phone": null
+        },
+        "medical_info": {
+            "doctors": [
+                "Dr. Chen"
+            ],
+            "appointments": [
+                {
+                    "doctor": "Dr. Chen",
+                    "type": "Regular Appointment",
+                    "date": "2025-03-31",
+                    "time": "13:30",
+                    "location": null,
+                    "status": "scheduled",
+                    "preparation": "Nothing special. Bring your current medications and any medical record you want the doctor to view"
+                },
+                {
+                    "doctor": "Dr. Chen",
+                    "type": "Annual Physical",
+                    "date": "2025-04-04",
+                    "time": "09:30",
+                    "location": null,
+                    "status": "scheduled",
+                    "preparation": "Bring your complete medication list, immunization records, and come fasting if bloodwork is planned (water is permitted)."
+                }
+            ],
+            "lab_work": [
+                {
+                    "type": "basic metabolic panel",
+                    "ordered_by": "Dr. Chen",
+                    "date": "2025-03-28",
+                    "instructions": "arrive 15 minutes early",
+                    "fasting_required": null
+                }
+            ],
+            "medications": [],
+            "conditions": [],
+            "allergies": [],
+            "preferences": []
+        },
+        "insurance_info": {
+            "provider": null,
+            "plan": null,
+            "coverage_details": null,
+            "referrals_required": null
+        }
+    },
+    {
+        "patient_id": "P002",
+        "name": "John Patel",
+        "dob": "1975-01-12",
+        "contact": {
+            "email": null,
+            "phone": "555-123-4567"
+        },
+        "medical_info": {
+            "doctors": [
+                "Dr. Ramirez"
+            ],
+            "appointments": [
+                {
+                    "doctor": "Dr. Ramirez",
+                    "type": "annual physical",
+                    "date": "2025-04-15T10:00:00",
+                    "location": null,
+                    "status": "scheduled",
+                    "preparation": "fast 8-12 hours before appointment"
+                }
+            ],
+            "lab_work": [
+                {
+                    "type": "bloodwork",
+                    "ordered_by": "Dr. Ramirez",
+                    "date": "2025-04-15",
+                    "instructions": null,
+                    "fasting_required": true
+                }
+            ],
+            "medications": [
+                {
+                    "name": "lisinopril",
+                    "dosage": "10mg",
+                    "purpose": "blood pressure",
+                    "prescription_status": "active",
+                    "supply_remaining": "2 pills",
+                    "refills_remaining": null,
+                    "last_refill_date": null,
+                    "pharmacy": {
+                        "name": "Walgreens",
+                        "location": "Oak Street"
+                    }
+                }
+            ],
+            "conditions": [
+                {
+                    "name": "hypertension",
+                    "treating_doctor": "Dr. Ramirez",
+                    "medications": [
+                        "lisinopril"
+                    ]
+                }
+            ],
+            "allergies": [],
+            "preferences": [
+                {
+                    "type": "medication",
+                    "preference": "prefers to stay on lisinopril rather than switch to losartan"
+                }
+            ]
+        },
+        "insurance_info": {
+            "provider": null,
+            "plan": null,
+            "coverage_details": {
+                "formulary_changes": "no longer covers lisinopril, prefers losartan",
+                "prior_authorization": {
+                    "status": "pending",
+                    "requested_for": "lisinopril 10mg",
+                    "priority": "urgent"
+                }
+            },
+            "referrals_required": null
+        }
+    },
+    {
+        "patient_id": "P003",
+        "name": "Sarah Williams",
+        "dob": "1968-03-05",
+        "contact": {
+            "email": "sarah.williams@email.com",
+            "phone": null
+        },
+        "medical_info": {
+            "doctors": [
+                "Dr. Garcia",
+                "Dr. Patel"
+            ],
+            "appointments": [
+                {
+                    "type": "MRI scan",
+                    "doctor": "Dr. Garcia",
+                    "date": "2025-03-05",
+                    "body_part": "right knee",
+                    "status": "completed"
+                },
+                {
+                    "type": "orthopedic consultation",
+                    "doctor": "Dr. Patel",
+                    "date": "2025-03-22T14:15:00",
+                    "reason": "MRI follow-up for right knee",
+                    "preparation": "bring MRI report if available"
+                }
+            ],
+            "lab_work": [
+                {
+                    "type": "blood test",
+                    "ordered_by": "Dr. Garcia",
+                    "date": "2025-02",
+                    "results": {
+                        "vitamin_D": "22 ng/mL",
+                        "status": "below normal range"
+                    }
+                }
+            ],
+            "medications": [
+                {
+                    "name": "levothyroxine",
+                    "last_refill_date": "2025-02-10",
+                    "refills_remaining": 3,
+                    "notes": "needs early refill for travel"
+                },
+                {
+                    "name": "losartan",
+                    "last_refill_date": "2025-02-15",
+                    "refills_remaining": 2,
+                    "notes": "sufficient supply for travel"
+                },
+                {
+                    "name": "vitamin D supplement",
+                    "dosage": "2000 IU",
+                    "frequency": "daily",
+                    "status": "new prescription",
+                    "pharmacy": {
+                        "name": "Rite Aid",
+                        "location": "Washington Avenue"
+                    }
+                }
+            ],
+            "conditions": [
+                {
+                    "name": "thyroid disorder",
+                    "treating_doctor": "Dr. Garcia",
+                    "medications": [
+                        "levothyroxine"
+                    ]
+                },
+                {
+                    "name": "hypertension",
+                    "treating_doctor": "Dr. Garcia",
+                    "medications": [
+                        "losartan"
+                    ]
+                },
+                {
+                    "name": "vitamin D deficiency",
+                    "treating_doctor": "Dr. Garcia",
+                    "medications": [
+                        "vitamin D supplement"
+                    ]
+                },
+                {
+                    "name": "knee issue",
+                    "treating_doctor": [
+                        "Dr. Garcia",
+                        "Dr. Patel"
+                    ],
+                    "diagnostic_tests": [
+                        "MRI"
+                    ]
+                }
+            ],
+            "allergies": [],
+            "family_members": [
+                {
+                    "relationship": "daughter",
+                    "conditions": [
+                        "asthma"
+                    ],
+                    "needs_appointment": true,
+                    "authorization_status": "pending parent authorization",
+                    "over_18": true
+                }
+            ],
+            "travel_plans": {
+                "destination": "Italy",
+                "departure_date": "2025-04-08",
+                "duration": "three weeks",
+                "medication_needs": "early refill authorization for levothyroxine"
+            }
+        },
+        "insurance_info": {
+            "provider": "BlueCross",
+            "plan": "PPO",
+            "coverage_details": null,
+            "referrals_required": true,
+            "referral_status": {
+                "for_specialist": "Dr. Patel",
+                "submitted_by": "Dr. Garcia",
+                "submitted_date": "2025-03-11",
+                "status": "approved"
+            }
+        },
+        "preferences": {
+            "pharmacy": "Rite Aid on Washington Avenue"
+        }
+    }
+]
