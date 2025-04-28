@@ -1,14 +1,11 @@
-from datetime import datetime
-from enum import Enum
-from typing import Annotated, Optional
 from lagom import Container
 from parlant.core.background_tasks import BackgroundTaskService
-from parlant.core.services.tools.plugins import PluginServer, tool
+from parlant.core.services.tools.plugins import PluginServer
 from parlant.core.services.tools.service_registry import ServiceRegistry
-from parlant.core.tools import ToolContext, ToolResult, ToolParameterOptions
-from modules.appointments._general import get_patient_data, get_doctors_availability
-from modules.appointments._scheduling import schedule_appointment 
-from modules.appointments._rescheduling import reschedule_appointment
+from modules.appointments.general import get_patient_data, get_doctors_availability
+from modules.appointments.scheduling import schedule_appointment 
+from modules.appointments.rescheduling import reschedule_appointment
+from modules.appointments.canceling import cancel_appointment
 
 server_instance: PluginServer | None = None
 
@@ -22,7 +19,8 @@ async def initialize_module(container: Container) -> None:
             get_patient_data,
             get_doctors_availability,
             schedule_appointment,
-            reschedule_appointment
+            reschedule_appointment,
+            cancel_appointment
         ],
         port=8094,
         host="127.0.0.1",

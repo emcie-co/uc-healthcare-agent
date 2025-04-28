@@ -57,7 +57,15 @@
                         "times": [
                             "10:30",
                             "11:30",
-                            "12:30"
+                            "12:30",
+                            "09:30",
+                            "09:30"
+                        ]
+                    },
+                    {
+                        "date": "2025-03-31",
+                        "times": [
+                            "13:30"
                         ]
                     }
                 ],
@@ -74,16 +82,17 @@
                     "last_visit": null,
                     "upcoming_appointments": [
                         {
+                            "date": "2025-03-31",
+                            "time": "13:30",
+                            "type": "Regular Appointment",
+                            "lab_work_ordered": "--basic metabolic panel",
+                            "status": "scheduled"
+                        },
+                        {
                             "date": "2025-04-04",
                             "time": "09:30",
                             "type": "Annual Physical",
                             "lab_work_ordered": "Bring your complete medication list, immunization records, and come fasting if bloodwork is planned (water is permitted)."
-                        },
-                        {
-                            "date": "2025-03-30",
-                            "time": "10:30",
-                            "type": "Regular Appointment",
-                            "lab_work_ordered": "--basic metabolic panel"
                         }
                     ]
                 }

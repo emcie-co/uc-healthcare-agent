@@ -17,7 +17,6 @@
                     "date": "2025-03-31",
                     "time": "13:30",
                     "location": null,
-                    "status": "scheduled",
                     "preparation": "Nothing special. Bring your current medications and any medical record you want the doctor to view"
                 },
                 {
@@ -28,24 +27,6 @@
                     "location": null,
                     "status": "scheduled",
                     "preparation": "Bring your complete medication list, immunization records, and come fasting if bloodwork is planned (water is permitted)."
-                },
-                {
-                    "doctor": "Dr. Chen",
-                    "type": "Regular Appointment",
-                    "date": "2025-03-30",
-                    "time": "09:30",
-                    "location": null,
-                    "status": "scheduled",
-                    "preparation": "Nothing special. Bring your current medications and any medical record you want the doctor to view"
-                },
-                {
-                    "doctor": "Dr. Chen",
-                    "type": "Regular Appointment",
-                    "date": "2025-03-30",
-                    "time": "10:30",
-                    "location": null,
-                    "status": "scheduled",
-                    "preparation": "Nothing special. Bring your current medications and any medical record you want the doctor to view"
                 }
             ],
             "lab_work": [

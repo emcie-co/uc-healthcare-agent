@@ -74,7 +74,7 @@
       "version": "0.4.0",
       "creation_utc": "2025-04-27T13:45:07.520301+00:00",
       "condition": "user provides a preferred day or time for rescheduling",
-      "action": "provide the doctor's next two available time slots based on the user's preference",
+      "action": "provide the doctor's next two available appointment slots based on the user's preference",
       "enabled": true,
       "metadata": {}
     },
@@ -82,8 +82,26 @@
       "id": "GhI7h2YrNT",
       "version": "0.4.0",
       "creation_utc": "2025-04-27T13:49:54.919748+00:00",
-      "condition": "user chooses time slot for rescheduling appointment with their doctor",
+      "condition": "user chooses appointment slot for rescheduling appointment with their doctor",
       "action": "assist and confirm the appointment in detail",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "YoArUo7ZKr",
+      "version": "0.4.0",
+      "creation_utc": "2025-04-28T09:01:11.719305+00:00",
+      "condition": "user requests to cancel an appointment",
+      "action": "mention the appointments that are scheduled if needed and ask which appointment they want to cancel",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "DKnoYQPEh0",
+      "version": "0.4.0",
+      "creation_utc": "2025-04-28T09:02:13.698316+00:00",
+      "condition": "user chooses appointment they want to cancel",
+      "action": "assist and confirm canceled appointment",
       "enabled": true,
       "metadata": {}
     }
@@ -150,6 +168,20 @@
       "version": "0.4.0",
       "creation_utc": "2025-04-27T13:54:03.718647+00:00",
       "guideline_id": "wQVHEFGZvG",
+      "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "Rh15N2VRSo",
+      "version": "0.4.0",
+      "creation_utc": "2025-04-28T09:01:11.719305+00:00",
+      "guideline_id": "YoArUo7ZKr",
+      "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "syjqdW8acY",
+      "version": "0.4.0",
+      "creation_utc": "2025-04-28T09:02:13.698316+00:00",
+      "guideline_id": "DKnoYQPEh0",
       "tag_id": "9b6t8F2o8V"
     }
   ]

@@ -33,6 +33,13 @@
       "creation_utc": "2025-04-27T13:50:49.755693+00:00",
       "guideline_id": "GhI7h2YrNT",
       "tool_id": "appointments_management:reschedule_appointment"
+    },
+    {
+      "id": "lJQhm6c0t5",
+      "version": "0.1.0",
+      "creation_utc": "2025-04-28T09:03:27.838010+00:00",
+      "guideline_id": "DKnoYQPEh0",
+      "tool_id": "appointments_management:cancel_appointment"
     }
   ]
 }
