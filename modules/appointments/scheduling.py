@@ -66,7 +66,7 @@ def _update_doctor_data(patient_id: str, doctor_name:str, requested_slot:datetim
 
 def _update_patient_data(patient_id: str, doctor_name:str, requested_slot:datetime, appointment_type:AppointmentType) -> Optional[str]:
     patient_data = _load_data(Path(PATIENTSDB_PATH))
-    patient = next((pat for pat in patient_data if pat["patient_id"] == patient_id), None)
+    patient = next((entry["patient"] for entry in patient_data if entry["patient_id"] == patient_id), None)
     _date, _time = _format_datetime(requested_slot)
     
     if patient is None:
@@ -93,7 +93,7 @@ def _verify_update(patient_id: str, doctor_name:str, requested_slot:datetime) ->
     _date, _time = _format_datetime(requested_slot)
     
     doctor = next((doc["doctor"] for doc in doctors_data if doc["doctor"]["name"] == doctor_name), None)
-    patient = next((pat for pat in patient_data if pat["patient_id"] == patient_id), None)
+    patient = next((entry["patient"] for entry in patient_data if entry["patient_id"] == patient_id), None)
     
     if doctor is None:
         return {"error": f"Doctor {doctor_name} not found."}

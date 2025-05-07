@@ -7,37 +7,13 @@
   ],
   "sessions": [
     {
-      "id": "6dWvmF4tA4",
+      "id": "Rqj2daSHmH",
       "version": "0.4.0",
-      "creation_utc": "2025-04-27T11:18:27.575318+00:00",
+      "creation_utc": "2025-05-07T16:01:38.507876+00:00",
       "customer_id": "C9XHUuuk1J",
       "agent_id": "4HZ5qLnx2V",
       "mode": "auto",
-      "title": "Scheduling",
-      "consumption_offsets": {
-        "client": 0
-      }
-    },
-    {
-      "id": "Q5iOsj-HBy",
-      "version": "0.4.0",
-      "creation_utc": "2025-04-27T14:15:25.823728+00:00",
-      "customer_id": "C9XHUuuk1J",
-      "agent_id": "4HZ5qLnx2V",
-      "mode": "auto",
-      "title": "Rescheduling",
-      "consumption_offsets": {
-        "client": 0
-      }
-    },
-    {
-      "id": "eTvTHMhHXQ",
-      "version": "0.4.0",
-      "creation_utc": "2025-04-28T09:04:01.002398+00:00",
-      "customer_id": "C9XHUuuk1J",
-      "agent_id": "4HZ5qLnx2V",
-      "mode": "auto",
-      "title": "Cancelling",
+      "title": "New Conversation",
       "consumption_offsets": {
         "client": 0
       }
@@ -5255,6 +5231,210 @@
       "correlation_id": "RID(ef9ckd5m7B)::k3ZPUjBp2W",
       "data": {
         "acknowledged_offset": 13,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "Wk9CBhKuIo",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T16:01:38.530195+00:00",
+      "session_id": "Rqj2daSHmH",
+      "source": "customer",
+      "kind": "message",
+      "offset": 0,
+      "correlation_id": "RID(ehtKQ4K9UV)",
+      "data": {
+        "message": "Heeellllo",
+        "participant": {
+          "id": "C9XHUuuk1J",
+          "display_name": "Sarah Johnson"
+        },
+        "flagged": false,
+        "tags": []
+      },
+      "deleted": false
+    },
+    {
+      "id": "Ddjg9npuHB",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T16:01:38.554102+00:00",
+      "session_id": "Rqj2daSHmH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 1,
+      "correlation_id": "RID(ehtKQ4K9UV)::1yBhCwPkQD",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "acknowledged",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "gaD15oz2mT",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T16:01:39.818809+00:00",
+      "session_id": "Rqj2daSHmH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 2,
+      "correlation_id": "RID(ehtKQ4K9UV)::1yBhCwPkQD",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "processing",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "j4MaFTM5pO",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T16:01:52.112204+00:00",
+      "session_id": "Rqj2daSHmH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 3,
+      "correlation_id": "RID(ehtKQ4K9UV)::1yBhCwPkQD",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "typing",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "UXCvbQBOJn",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T16:02:05.899255+00:00",
+      "session_id": "Rqj2daSHmH",
+      "source": "ai_agent",
+      "kind": "message",
+      "offset": 4,
+      "correlation_id": "RID(ehtKQ4K9UV)::1yBhCwPkQD",
+      "data": {
+        "message": "Hello, Sarah! 😊 How can I assist you today with your medical needs? If you have any questions about your upcoming appointment or lab work, feel free to ask!",
+        "participant": {
+          "id": "4HZ5qLnx2V",
+          "display_name": "David"
+        }
+      },
+      "deleted": false
+    },
+    {
+      "id": "TSV0GAWyR3",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T16:02:05.933455+00:00",
+      "session_id": "Rqj2daSHmH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 5,
+      "correlation_id": "RID(ehtKQ4K9UV)::1yBhCwPkQD",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "gSoV86f9PM",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T16:04:37.809268+00:00",
+      "session_id": "Rqj2daSHmH",
+      "source": "customer",
+      "kind": "message",
+      "offset": 6,
+      "correlation_id": "RID(y0Hkz-3g6j)",
+      "data": {
+        "message": "sure thing! when is my next appointment?",
+        "participant": {
+          "id": "C9XHUuuk1J",
+          "display_name": "Sarah Johnson"
+        },
+        "flagged": false,
+        "tags": []
+      },
+      "deleted": false
+    },
+    {
+      "id": "PblMUDmPpp",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T16:04:37.829901+00:00",
+      "session_id": "Rqj2daSHmH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 7,
+      "correlation_id": "RID(y0Hkz-3g6j)::eDEAsaoJJ1",
+      "data": {
+        "acknowledged_offset": 6,
+        "status": "acknowledged",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "m1iXFWEQ7Z",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T16:04:38.851137+00:00",
+      "session_id": "Rqj2daSHmH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 8,
+      "correlation_id": "RID(y0Hkz-3g6j)::eDEAsaoJJ1",
+      "data": {
+        "acknowledged_offset": 6,
+        "status": "processing",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "CYpaUmvLAz",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T16:04:42.988863+00:00",
+      "session_id": "Rqj2daSHmH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 9,
+      "correlation_id": "RID(y0Hkz-3g6j)::eDEAsaoJJ1",
+      "data": {
+        "acknowledged_offset": 6,
+        "status": "typing",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "aUK6QJiBTx",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T16:04:56.758919+00:00",
+      "session_id": "Rqj2daSHmH",
+      "source": "ai_agent",
+      "kind": "message",
+      "offset": 10,
+      "correlation_id": "RID(y0Hkz-3g6j)::eDEAsaoJJ1",
+      "data": {
+        "message": "Your next appointment is scheduled with Dr. Chen on March 31, 2025, at 13:30. Please remember to arrive 15 minutes early. Let me know if there's anything else you need!",
+        "participant": {
+          "id": "4HZ5qLnx2V",
+          "display_name": "David"
+        }
+      },
+      "deleted": false
+    },
+    {
+      "id": "c1H83Il-QK",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T16:04:56.799231+00:00",
+      "session_id": "Rqj2daSHmH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 11,
+      "correlation_id": "RID(y0Hkz-3g6j)::eDEAsaoJJ1",
+      "data": {
+        "acknowledged_offset": 6,
         "status": "ready",
         "data": {}
       },
@@ -16763,6 +16943,2540 @@
                     "output_tokens": 236,
                     "extra": {
                       "cached_input_tokens": 5504
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "3O98rH5FTm",
+      "version": "0.4.0",
+      "session_id": "AyhhjcJo9m",
+      "correlation_id": "RID(dYsEPMAZRL)::ErrIGjlelP",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 7.605473756790161,
+              "usage": {
+                "input_tokens": 9364,
+                "output_tokens": 501,
+                "extra": {
+                  "cached_input_tokens": 0
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Of course! Could you please let me know your preferred time for the appointment?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [
+            {
+              "guideline_id": "DlfqCIr8Pn",
+              "condition": "patient asks to schedule an appointment",
+              "action": "ask the patient for their preferred time",
+              "score": 10,
+              "rationale": "Condition Application: \"The patient has explicitly requested to schedule an appointment.\"; Guideline Previously Applied: \"The agent has not yet ASKED (i.e. inquired) about the patient's preferred time for the appointment.\""
+            }
+          ],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 4.18073844909668,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.812901258468628,
+                  "usage": {
+                    "input_tokens": 5499,
+                    "output_tokens": 105,
+                    "extra": {
+                      "cached_input_tokens": 1920
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 4.1732237339019775,
+                  "usage": {
+                    "input_tokens": 5497,
+                    "output_tokens": 232,
+                    "extra": {
+                      "cached_input_tokens": 0
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "BSk6u7vS42",
+      "version": "0.4.0",
+      "session_id": "AyhhjcJo9m",
+      "correlation_id": "RID(IAQ3pVb1gv)::h3k3VH16dm",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 9.20562481880188,
+              "usage": {
+                "input_tokens": 9454,
+                "output_tokens": 596,
+                "extra": {
+                  "cached_input_tokens": 9344
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Thank you for letting me know your preference for a morning appointment. I'll check our schedule and get back to you with available timeslots shortly. Is there anything else I can assist you with in the meantime?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [
+            {
+              "guideline_id": "VPYjjSpMQm",
+              "condition": "patient gives preferred times for scheduling an appointment",
+              "action": "provide timeslots based on their preferences",
+              "score": 8,
+              "rationale": "Condition Application: \"The patient has specified a preference for morning times for their appointment.\"; Guideline Previously Applied: \"The agent has not yet PROVIDED (i.e. offered) specific timeslots based on the patient's preference for morning times.\""
+            }
+          ],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 4.417654991149902,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 4.411613464355469,
+                  "usage": {
+                    "input_tokens": 5583,
+                    "output_tokens": 241,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.787968397140503,
+                  "usage": {
+                    "input_tokens": 5581,
+                    "output_tokens": 239,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "R4dlPgC6PA",
+      "version": "0.4.0",
+      "session_id": "AyhhjcJo9m",
+      "correlation_id": "RID(NNcdqxS0-3)::QMx8fT5V5X",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 8.948511123657227,
+              "usage": {
+                "input_tokens": 9538,
+                "output_tokens": 673,
+                "extra": {
+                  "cached_input_tokens": 8320
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Great! We have available timeslots for a morning appointment between 9:00AM and 11:00AM. Please let me know which time works best for you."
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [
+            {
+              "guideline_id": "VPYjjSpMQm",
+              "condition": "patient gives preferred times for scheduling an appointment",
+              "action": "provide timeslots from 9:00AM to 11:00AM for morning preferences and 1:00PM to 5:00PM for afternoon preferences",
+              "score": 9,
+              "rationale": "Condition Application: \"The patient has expressed a preference for morning times for their appointment.\"; Guideline Previously Applied: \"The agent has not yet PROVIDED (i.e. given or offered) specific timeslots for the morning preference, so the action has not been fulfilled.\""
+            }
+          ],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 4.44147253036499,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 4.436466217041016,
+                  "usage": {
+                    "input_tokens": 5635,
+                    "output_tokens": 284,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 4.066011428833008,
+                  "usage": {
+                    "input_tokens": 5581,
+                    "output_tokens": 252,
+                    "extra": {
+                      "cached_input_tokens": 5504
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "UERK94V1wu",
+      "version": "0.4.0",
+      "session_id": "B8lHvzKwZD",
+      "correlation_id": "RID(IyJiHMVONy)::fgxzPAS3d4",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 6.259748458862305,
+              "usage": {
+                "input_tokens": 9377,
+                "output_tokens": 435,
+                "extra": {
+                  "cached_input_tokens": 0
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Certainly! Could you please let me know your preferred date and time for the appointment?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [
+            {
+              "guideline_id": "DlfqCIr8Pn",
+              "condition": "patient asks to schedule an appointment",
+              "action": "ask the patient for their preferred time",
+              "score": 9,
+              "rationale": "Condition Application: \"The patient has explicitly asked to schedule an appointment, which directly fulfills the condition.\"; Guideline Previously Applied: \"The agent has not yet ASKED (i.e. inquired) the patient for their preferred time, so the action has not been fulfilled.\""
+            }
+          ],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 3.371594190597534,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.295910596847534,
+                  "usage": {
+                    "input_tokens": 5552,
+                    "output_tokens": 128,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.365013837814331,
+                  "usage": {
+                    "input_tokens": 5498,
+                    "output_tokens": 246,
+                    "extra": {
+                      "cached_input_tokens": 4864
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "S673uC2jkB",
+      "version": "0.4.0",
+      "session_id": "B8lHvzKwZD",
+      "correlation_id": "RID(PsOdyCwxzM)::NSSny1Vhez",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 11.182478427886963,
+              "usage": {
+                "input_tokens": 9546,
+                "output_tokens": 675,
+                "extra": {
+                  "cached_input_tokens": 8320
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Great! We have the following morning times available for your appointment: 9:00 AM, 10:00 AM, and 11:00 AM. Please let me know which time works best for you."
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [
+            {
+              "guideline_id": "VPYjjSpMQm",
+              "condition": "patient gives preferred times for scheduling an appointment",
+              "action": "provide timeslots from 9:00AM to 11:00AM for morning preferences and 1:00PM to 5:00PM for afternoon preferences",
+              "score": 8,
+              "rationale": "Condition Application: \"The patient mentioned that morning times would work for them, indicating a preference for scheduling an appointment.\"; Guideline Previously Applied: \"The agent did not yet PROVIDE (i.e. offer) specific timeslots for the morning preference. This means the guideline has not been applied yet.\""
+            }
+          ],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 4.919626712799072,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 4.9131879806518555,
+                  "usage": {
+                    "input_tokens": 5636,
+                    "output_tokens": 291,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.6473519802093506,
+                  "usage": {
+                    "input_tokens": 5582,
+                    "output_tokens": 247,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "NROmYpGBRs",
+      "version": "0.4.0",
+      "session_id": "HbqMoiFxA8",
+      "correlation_id": "RID(LDJ3Uw-NbJ)::1HYwtZu3YF",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 42.190407037734985,
+              "usage": {
+                "input_tokens": 9138,
+                "output_tokens": 511,
+                "extra": {
+                  "cached_input_tokens": 0
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Hello! I'm doing well, thank you for asking. How about you? Ready to tackle any healthcare mysteries today?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 4.283715486526489,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.2675528526306152,
+                  "usage": {
+                    "input_tokens": 5547,
+                    "output_tokens": 84,
+                    "extra": {
+                      "cached_input_tokens": 0
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.703617811203003,
+                  "usage": {
+                    "input_tokens": 5493,
+                    "output_tokens": 99,
+                    "extra": {
+                      "cached_input_tokens": 0
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 4.27628493309021,
+                  "usage": {
+                    "input_tokens": 5498,
+                    "output_tokens": 96,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "8CVd4Bas3J",
+      "version": "0.4.0",
+      "session_id": "HbqMoiFxA8",
+      "correlation_id": "RID(P2nApbigDq)::EoB-YLvRco",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 15.70870852470398,
+              "usage": {
+                "input_tokens": 9234,
+                "output_tokens": 562,
+                "extra": {
+                  "cached_input_tokens": 8320
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "I'm sorry to hear that you're not feeling well. It's important to listen to your body and consider reaching out to a healthcare professional for advice. Is there anything specific you'd like to discuss or any way I can assist you further?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 5.476794958114624,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 5.4725422859191895,
+                  "usage": {
+                    "input_tokens": 5641,
+                    "output_tokens": 131,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.528740882873535,
+                  "usage": {
+                    "input_tokens": 5587,
+                    "output_tokens": 87,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.5661559104919434,
+                  "usage": {
+                    "input_tokens": 5592,
+                    "output_tokens": 87,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "VPn3OWEiGu",
+      "version": "0.4.0",
+      "session_id": "HbqMoiFxA8",
+      "correlation_id": "RID(LMFTV96vfd)::mDph-OSlPj",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 18.32131862640381,
+              "usage": {
+                "input_tokens": 9884,
+                "output_tokens": 773,
+                "extra": {
+                  "cached_input_tokens": 9856
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "I'm sorry, but it seems there is no doctor with the name Dr. Chen in our system. If you would like, I can help you find another doctor or service. Please let me know how I can assist you further."
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [
+            {
+              "guideline_id": "DlfqCIr8Pn",
+              "condition": "patient asks to schedule an appointment",
+              "action": "ask the patient for their preferred time",
+              "score": 8,
+              "rationale": "Condition Application: \"The patient inquired about the availability of Dr. Chen, which implies an interest in scheduling an appointment.\"; Guideline Previously Applied: \"The agent has not yet ASKED (i.e. inquired) the patient for their preferred time for the appointment.\""
+            },
+            {
+              "guideline_id": "m5fyRLCxx5",
+              "condition": "patient asks about a doctor’s availability",
+              "action": "suggest the two most recent availability slots",
+              "score": 9,
+              "rationale": "Condition Application: \"The patient specifically inquired about Dr. Chen's availability, which directly aligns with the condition of asking about a doctor's availability.\"; Guideline Previously Applied: \"The agent has not yet SUGGESTED any availability slots for Dr. Chen, meaning the action has not been performed.\""
+            }
+          ],
+          "tool_calls": [
+            {
+              "tool_id": "appointments:get_doctors_availability",
+              "arguments": {
+                "doctor_name": "Dr Chen"
+              },
+              "result": {
+                "data": "No doctor with the name Dr Chen",
+                "metadata": {},
+                "control": {},
+                "utterances": [],
+                "utterance_fields": {}
+              }
+            }
+          ],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 5.849359035491943,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.349062204360962,
+                  "usage": {
+                    "input_tokens": 5764,
+                    "output_tokens": 130,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 5.843855619430542,
+                  "usage": {
+                    "input_tokens": 5710,
+                    "output_tokens": 248,
+                    "extra": {
+                      "cached_input_tokens": 0
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 4.314083099365234,
+                  "usage": {
+                    "input_tokens": 5715,
+                    "output_tokens": 217,
+                    "extra": {
+                      "cached_input_tokens": 0
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": [
+              {
+                "schema_name": "SingleToolBatchSchema",
+                "model": "openai/gpt-4o-2024-11-20",
+                "duration": 5.877894163131714,
+                "usage": {
+                  "input_tokens": 5159,
+                  "output_tokens": 396,
+                  "extra": {
+                    "cached_input_tokens": 0
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "guideline_matches": [
+            {
+              "guideline_id": "DlfqCIr8Pn",
+              "condition": "patient asks to schedule an appointment",
+              "action": "ask the patient for their preferred time",
+              "score": 8,
+              "rationale": "Condition Application: \"The patient inquired about Dr. Chen's availability, which suggests an interest in scheduling an appointment.\"; Guideline Previously Applied: \"The agent did not ASK (i.e. inquire) the patient for their preferred time yet. This means the guideline has not been applied.\""
+            },
+            {
+              "guideline_id": "m5fyRLCxx5",
+              "condition": "patient asks about a doctor’s availability",
+              "action": "suggest the two most recent availability slots",
+              "score": 8,
+              "rationale": "Condition Application: \"The patient specifically inquired about Dr. Chen's availability, which directly aligns with the condition of asking about a doctor's availability.\"; Guideline Previously Applied: \"The agent did not SUGGEST any availability slots because the system indicated that there is no doctor with the name Dr. Chen. Therefore, the action was not applied.\""
+            }
+          ],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 5.09460973739624,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.7248315811157227,
+                  "usage": {
+                    "input_tokens": 5870,
+                    "output_tokens": 130,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 5.072109699249268,
+                  "usage": {
+                    "input_tokens": 5816,
+                    "output_tokens": 249,
+                    "extra": {
+                      "cached_input_tokens": 5248
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 4.953764200210571,
+                  "usage": {
+                    "input_tokens": 5821,
+                    "output_tokens": 266,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": [
+              {
+                "schema_name": "SingleToolBatchSchema",
+                "model": "openai/gpt-4o-2024-11-20",
+                "duration": 8.537225008010864,
+                "usage": {
+                  "input_tokens": 5306,
+                  "output_tokens": 410,
+                  "extra": {
+                    "cached_input_tokens": 4608
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "Ypc3zea9af",
+      "version": "0.4.0",
+      "session_id": "HbqMoiFxA8",
+      "correlation_id": "RID(euoqh7i-Th)::hoa-1HOV6Z",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 17.49949312210083,
+              "usage": {
+                "input_tokens": 9877,
+                "output_tokens": 965,
+                "extra": {
+                  "cached_input_tokens": 9856
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "I apologize for the inconvenience, but I'm currently unable to access Dr. Chen's availability due to a system error. Could you please let me know your preferred time for an appointment, and I'll do my best to assist you further?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [
+            {
+              "guideline_id": "DlfqCIr8Pn",
+              "condition": "patient asks to schedule an appointment",
+              "action": "ask the patient for their preferred time",
+              "score": 8,
+              "rationale": "Condition Application: \"The patient inquired about Dr. Chen's availability, which implies an interest in scheduling an appointment.\"; Guideline Previously Applied: \"The agent did not ASK (i.e. inquire) about the patient's preferred time for the appointment, so the guideline has not been applied yet.\""
+            },
+            {
+              "guideline_id": "m5fyRLCxx5",
+              "condition": "patient asks about a doctor’s availability",
+              "action": "suggest the two most recent availability slots",
+              "score": 9,
+              "rationale": "Condition Application: \"The patient specifically inquired about Dr. Chen's availability, which directly relates to the condition of asking about a doctor's availability.\"; Guideline Previously Applied: \"The agent has not yet SUGGESTED (i.e. proposed or offered) any availability slots for Dr. Chen, so the guideline has not been applied yet.\""
+            }
+          ],
+          "tool_calls": [
+            {
+              "tool_id": "appointments:get_doctors_availability",
+              "arguments": {
+                "doctor_name": "Dr. Chen"
+              },
+              "result": {
+                "data": "Tool call error",
+                "metadata": {
+                  "error_details": "Tool error (tool='get_doctors_availability'): url='http://127.0.0.1:8199', arguments='{'doctor_name': 'Dr. Chen'}', detail=['Traceback (most recent call last):\\n', '  File \"C:\\\\Users\\\\yann\\\\AppData\\\\Local\\\\pypoetry\\\\Cache\\\\virtualenvs\\\\plugin-tools-m_Wy8JJm-py3.12\\\\Lib\\\\site-packages\\\\parlant\\\\core\\\\services\\\\tools\\\\plugins.py\", line 691, in call_tool\\n    result = self.tools[name].function(context, **adapted_args)  # type: ignore\\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n', '  File \"C:\\\\Users\\\\yann\\\\Desktop\\\\projects\\\\parlant-projects\\\\healtcare-agent\\\\modules\\\\appointments\\\\general.py\", line 43, in get_doctors_availability\\n    availabilities = doctor[\"doctor\"][\"scheduling\"][\"availability\"]\\n                     ~~~~~~^^^^^^^^^^\\n', \"KeyError: 'doctor'\\n\"]"
+                },
+                "control": {},
+                "utterances": [],
+                "utterance_fields": {}
+              }
+            }
+          ],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 5.350531339645386,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 4.412956476211548,
+                  "usage": {
+                    "input_tokens": 5765,
+                    "output_tokens": 130,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 4.7004454135894775,
+                  "usage": {
+                    "input_tokens": 5711,
+                    "output_tokens": 250,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 5.342503070831299,
+                  "usage": {
+                    "input_tokens": 5716,
+                    "output_tokens": 267,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": [
+              {
+                "schema_name": "SingleToolBatchSchema",
+                "model": "openai/gpt-4o-2024-11-20",
+                "duration": 5.739410877227783,
+                "usage": {
+                  "input_tokens": 5160,
+                  "output_tokens": 402,
+                  "extra": {
+                    "cached_input_tokens": 4352
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "guideline_matches": [
+            {
+              "guideline_id": "DlfqCIr8Pn",
+              "condition": "patient asks to schedule an appointment",
+              "action": "ask the patient for their preferred time",
+              "score": 8,
+              "rationale": "Condition Application: \"The patient inquired about Dr. Chen's availability, which suggests an interest in scheduling an appointment.\"; Guideline Previously Applied: \"The agent did not ASK the patient for their preferred time yet, so the action has not been applied.\""
+            },
+            {
+              "guideline_id": "m5fyRLCxx5",
+              "condition": "patient asks about a doctor’s availability",
+              "action": "suggest the two most recent availability slots",
+              "score": 8,
+              "rationale": "Condition Application: \"The patient specifically inquired about Dr. Chen's availability, making this guideline relevant to the ongoing discussion.\"; Guideline Previously Applied: \"The agent did not SUGGEST (i.e. propose or offer) any availability slots for Dr. Chen due to a tool call error. Therefore, the guideline has not been applied yet.\""
+            }
+          ],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 5.938256740570068,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.1869008541107178,
+                  "usage": {
+                    "input_tokens": 5868,
+                    "output_tokens": 130,
+                    "extra": {
+                      "cached_input_tokens": 5248
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 5.92289400100708,
+                  "usage": {
+                    "input_tokens": 5814,
+                    "output_tokens": 241,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 4.229783296585083,
+                  "usage": {
+                    "input_tokens": 5819,
+                    "output_tokens": 226,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": [
+              {
+                "schema_name": "SingleToolBatchSchema",
+                "model": "openai/gpt-4o-2024-11-20",
+                "duration": 5.977206468582153,
+                "usage": {
+                  "input_tokens": 5304,
+                  "output_tokens": 426,
+                  "extra": {
+                    "cached_input_tokens": 4608
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tTOoxoZ9w5",
+      "version": "0.4.0",
+      "session_id": "HbqMoiFxA8",
+      "correlation_id": "RID(0Al4mNR-pJ)::esAhJB0KIy",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 15.00033450126648,
+              "usage": {
+                "input_tokens": 10091,
+                "output_tokens": 703,
+                "extra": {
+                  "cached_input_tokens": 8320
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Dr. Chen is available on March 30th at 11:30 AM and 12:30 PM. Could you please let me know your preferred time?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [
+            {
+              "guideline_id": "DlfqCIr8Pn",
+              "condition": "patient asks to schedule an appointment",
+              "action": "ask the patient for their preferred time",
+              "score": 8,
+              "rationale": "Condition Application: \"The patient inquired about Dr. Chen's availability, which implies an interest in scheduling an appointment.\"; Guideline Previously Applied: \"The agent did not ASK (i.e. inquire) the patient for their preferred time. This means the guideline has not been applied yet.\""
+            },
+            {
+              "guideline_id": "m5fyRLCxx5",
+              "condition": "patient asks about a doctor’s availability",
+              "action": "suggest the two most recent availability slots",
+              "score": 9,
+              "rationale": "Condition Application: \"The patient specifically inquired about Dr. Chen's availability, which directly relates to the condition of asking about a doctor's availability.\"; Guideline Previously Applied: \"The agent has not yet SUGGESTED any availability slots for Dr. Chen, so the action has not been applied.\""
+            }
+          ],
+          "tool_calls": [
+            {
+              "tool_id": "appointments:get_doctors_availability",
+              "arguments": {
+                "doctor_name": "Dr. Chen"
+              },
+              "result": {
+                "data": [
+                  {
+                    "date": "2025-03-30",
+                    "times": [
+                      "11:30",
+                      "12:30"
+                    ]
+                  },
+                  {
+                    "date": "2025-03-31",
+                    "times": [
+                      "14:30",
+                      "15:30",
+                      "16:30"
+                    ]
+                  },
+                  {
+                    "date": "2025-04-01",
+                    "times": [
+                      "09:30",
+                      "10:30",
+                      "11:30",
+                      "12:30"
+                    ]
+                  },
+                  {
+                    "date": "2025-04-02",
+                    "times": [
+                      "16:30",
+                      "17:30",
+                      "18:30",
+                      "19:30"
+                    ]
+                  },
+                  {
+                    "date": "2025-04-03",
+                    "times": [
+                      "09:30",
+                      "10:30",
+                      "11:30",
+                      "12:30"
+                    ]
+                  },
+                  {
+                    "date": "2025-04-04",
+                    "times": [
+                      "09:30",
+                      "09:30",
+                      "10:30",
+                      "11:30",
+                      "12:30"
+                    ]
+                  },
+                  {
+                    "date": "2025-03-31",
+                    "times": [
+                      "13:30"
+                    ]
+                  }
+                ],
+                "metadata": {},
+                "control": {},
+                "utterances": [],
+                "utterance_fields": {
+                  "doctor_name": "Dr. Chen",
+                  "first_date_slot": "2025-03-30",
+                  "first_time_slot": "11:30",
+                  "second_date_slot": "2025-03-30",
+                  "second_time_slot": "12:30"
+                }
+              }
+            }
+          ],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 6.11430811882019,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.813114643096924,
+                  "usage": {
+                    "input_tokens": 5711,
+                    "output_tokens": 211,
+                    "extra": {
+                      "cached_input_tokens": 5632
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 6.1077659130096436,
+                  "usage": {
+                    "input_tokens": 5716,
+                    "output_tokens": 263,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.7653191089630127,
+                  "usage": {
+                    "input_tokens": 5765,
+                    "output_tokens": 128,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": [
+              {
+                "schema_name": "SingleToolBatchSchema",
+                "model": "openai/gpt-4o-2024-11-20",
+                "duration": 4.910509347915649,
+                "usage": {
+                  "input_tokens": 5160,
+                  "output_tokens": 402,
+                  "extra": {
+                    "cached_input_tokens": 5120
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "guideline_matches": [
+            {
+              "guideline_id": "DlfqCIr8Pn",
+              "condition": "patient asks to schedule an appointment",
+              "action": "ask the patient for their preferred time",
+              "score": 9,
+              "rationale": "Condition Application: \"The patient inquired about Dr. Chen's availability, which implies an interest in scheduling an appointment.\"; Guideline Previously Applied: \"The agent has not yet ASKED the patient for their preferred time, so this action has not been fulfilled.\""
+            },
+            {
+              "guideline_id": "m5fyRLCxx5",
+              "condition": "patient asks about a doctor’s availability",
+              "action": "suggest the two most recent availability slots",
+              "score": 10,
+              "rationale": "Condition Application: \"The patient specifically inquired about Dr. Chen's availability, which directly aligns with the condition of asking about a doctor's availability.\"; Guideline Previously Applied: \"The agent has not yet SUGGESTED (i.e. proposed or recommended) any availability slots to the patient, so the action has not been applied.\""
+            }
+          ],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 7.545202732086182,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 7.085159063339233,
+                  "usage": {
+                    "input_tokens": 6030,
+                    "output_tokens": 254,
+                    "extra": {
+                      "cached_input_tokens": 5504
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 7.539685487747192,
+                  "usage": {
+                    "input_tokens": 6035,
+                    "output_tokens": 263,
+                    "extra": {
+                      "cached_input_tokens": 5504
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 4.458343267440796,
+                  "usage": {
+                    "input_tokens": 6084,
+                    "output_tokens": 131,
+                    "extra": {
+                      "cached_input_tokens": 5248
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": [
+              {
+                "schema_name": "SingleToolBatchSchema",
+                "model": "openai/gpt-4o-2024-11-20",
+                "duration": 3.57149338722229,
+                "usage": {
+                  "input_tokens": 5534,
+                  "output_tokens": 210,
+                  "extra": {
+                    "cached_input_tokens": 4736
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "BjWZ3RUJxd",
+      "version": "0.4.0",
+      "session_id": "cIcBL74aUQ",
+      "correlation_id": "RID(C0411y4F8P)::JB36RopxR1",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 7.544058799743652,
+              "usage": {
+                "input_tokens": 9138,
+                "output_tokens": 513,
+                "extra": {
+                  "cached_input_tokens": 8320
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Hello! I'm doing well, thank you for asking. How about you? Is there anything I can assist you with today?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 2.8391377925872803,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.4731597900390625,
+                  "usage": {
+                    "input_tokens": 5493,
+                    "output_tokens": 81,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.7349936962127686,
+                  "usage": {
+                    "input_tokens": 5498,
+                    "output_tokens": 93,
+                    "extra": {
+                      "cached_input_tokens": 4864
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.8291079998016357,
+                  "usage": {
+                    "input_tokens": 5547,
+                    "output_tokens": 123,
+                    "extra": {
+                      "cached_input_tokens": 4864
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "FZeK2JTdcQ",
+      "version": "0.4.0",
+      "session_id": "cIcBL74aUQ",
+      "correlation_id": "RID(TkWDwxl0C6)::8249xhnYa3",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 14.566931247711182,
+              "usage": {
+                "input_tokens": 9241,
+                "output_tokens": 667,
+                "extra": {
+                  "cached_input_tokens": 8320
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Oh no, that sounds chilly! Hopefully, you have a warm drink and a cozy blanket to help you through it. If only we could control the weather, right? 😊"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 5.115321397781372,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.3585214614868164,
+                  "usage": {
+                    "input_tokens": 5592,
+                    "output_tokens": 83,
+                    "extra": {
+                      "cached_input_tokens": 4864
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.1194655895233154,
+                  "usage": {
+                    "input_tokens": 5597,
+                    "output_tokens": 96,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 5.106805801391602,
+                  "usage": {
+                    "input_tokens": 5646,
+                    "output_tokens": 134,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "o-e1M5Udjc",
+      "version": "0.4.0",
+      "session_id": "cIcBL74aUQ",
+      "correlation_id": "RID(kRzF1lQiL5)::fdXk0uiRbK",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 11.744506120681763,
+              "usage": {
+                "input_tokens": 9344,
+                "output_tokens": 692,
+                "extra": {
+                  "cached_input_tokens": 8448
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "I hear you! It's like the weather has a mind of its own sometimes. Hopefully, it warms up soon. In the meantime, maybe a good book or movie can help pass the time indoors!"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 3.5942702293395996,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.7420058250427246,
+                  "usage": {
+                    "input_tokens": 5699,
+                    "output_tokens": 89,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.3450803756713867,
+                  "usage": {
+                    "input_tokens": 5704,
+                    "output_tokens": 94,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.586271286010742,
+                  "usage": {
+                    "input_tokens": 5753,
+                    "output_tokens": 128,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "FWx3N9JW0e",
+      "version": "0.4.0",
+      "session_id": "cIcBL74aUQ",
+      "correlation_id": "RID(FUP42XAmMs)::0VcfND0sIc",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 9.348240613937378,
+              "usage": {
+                "input_tokens": 10187,
+                "output_tokens": 663,
+                "extra": {
+                  "cached_input_tokens": 8448
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Dr. Chen is available on March 30th at 11:30 AM and 12:30 PM. Would either of these times work for you, or do you have another preferred time?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [
+            {
+              "guideline_id": "DlfqCIr8Pn",
+              "condition": "patient asks to schedule an appointment",
+              "action": "ask the patient for their preferred time",
+              "score": 8,
+              "rationale": "Condition Application: \"The patient inquired about Dr. Chen's availability, which implies an interest in scheduling an appointment.\"; Guideline Previously Applied: \"The agent has not yet ASKED the patient for their preferred time, so the action has not been fulfilled.\""
+            },
+            {
+              "guideline_id": "m5fyRLCxx5",
+              "condition": "patient asks about a doctor’s availability",
+              "action": "suggest the two most recent availability slots",
+              "score": 9,
+              "rationale": "Condition Application: \"The patient specifically inquired about Dr. Chen's availability, indicating a clear interest in knowing when the doctor is free.\"; Guideline Previously Applied: \"The agent has not yet SUGGESTED (i.e. offered or proposed) any availability slots for Dr. Chen, so this action has not been applied.\""
+            }
+          ],
+          "tool_calls": [
+            {
+              "tool_id": "appointments:get_doctors_availability",
+              "arguments": {
+                "doctor_name": "Dr. Chen"
+              },
+              "result": {
+                "data": [
+                  {
+                    "date": "2025-03-30",
+                    "times": [
+                      "11:30",
+                      "12:30"
+                    ]
+                  },
+                  {
+                    "date": "2025-03-31",
+                    "times": [
+                      "14:30",
+                      "15:30",
+                      "16:30"
+                    ]
+                  },
+                  {
+                    "date": "2025-04-01",
+                    "times": [
+                      "09:30",
+                      "10:30",
+                      "11:30",
+                      "12:30"
+                    ]
+                  },
+                  {
+                    "date": "2025-04-02",
+                    "times": [
+                      "16:30",
+                      "17:30",
+                      "18:30",
+                      "19:30"
+                    ]
+                  },
+                  {
+                    "date": "2025-04-03",
+                    "times": [
+                      "09:30",
+                      "10:30",
+                      "11:30",
+                      "12:30"
+                    ]
+                  },
+                  {
+                    "date": "2025-04-04",
+                    "times": [
+                      "09:30",
+                      "09:30",
+                      "10:30",
+                      "11:30",
+                      "12:30"
+                    ]
+                  },
+                  {
+                    "date": "2025-03-31",
+                    "times": [
+                      "13:30"
+                    ]
+                  }
+                ],
+                "metadata": {},
+                "control": {},
+                "utterances": [],
+                "utterance_fields": {
+                  "doctor_name": "Dr. Chen",
+                  "first_date_slot": "2025-03-30",
+                  "first_time_slot": "11:30",
+                  "second_date_slot": "2025-03-30",
+                  "second_time_slot": "12:30"
+                }
+              }
+            }
+          ],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 7.928710699081421,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 7.751804351806641,
+                  "usage": {
+                    "input_tokens": 5818,
+                    "output_tokens": 245,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 7.9221885204315186,
+                  "usage": {
+                    "input_tokens": 5823,
+                    "output_tokens": 267,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 5.403188705444336,
+                  "usage": {
+                    "input_tokens": 5872,
+                    "output_tokens": 132,
+                    "extra": {
+                      "cached_input_tokens": 5248
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": [
+              {
+                "schema_name": "SingleToolBatchSchema",
+                "model": "openai/gpt-4o-2024-11-20",
+                "duration": 5.228525161743164,
+                "usage": {
+                  "input_tokens": 5267,
+                  "output_tokens": 405,
+                  "extra": {
+                    "cached_input_tokens": 4096
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "guideline_matches": [
+            {
+              "guideline_id": "DlfqCIr8Pn",
+              "condition": "patient asks to schedule an appointment",
+              "action": "ask the patient for their preferred time",
+              "score": 8,
+              "rationale": "Condition Application: \"The patient inquired about Dr. Chen's availability, indicating an interest in scheduling an appointment.\"; Guideline Previously Applied: \"The agent has not yet ASKED the patient for their preferred time, so the action has not been applied.\""
+            },
+            {
+              "guideline_id": "m5fyRLCxx5",
+              "condition": "patient asks about a doctor’s availability",
+              "action": "suggest the two most recent availability slots",
+              "score": 10,
+              "rationale": "Condition Application: \"The patient specifically inquired about Dr. Chen's availability, which directly aligns with the condition.\"; Guideline Previously Applied: \"The agent has not yet SUGGESTED (i.e. recommended or proposed) any availability slots to the patient.\""
+            }
+          ],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 8.524837493896484,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 7.567906141281128,
+                  "usage": {
+                    "input_tokens": 6137,
+                    "output_tokens": 242,
+                    "extra": {
+                      "cached_input_tokens": 5248
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 8.515226364135742,
+                  "usage": {
+                    "input_tokens": 6142,
+                    "output_tokens": 248,
+                    "extra": {
+                      "cached_input_tokens": 5632
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 6.260025262832642,
+                  "usage": {
+                    "input_tokens": 6191,
+                    "output_tokens": 131,
+                    "extra": {
+                      "cached_input_tokens": 5632
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": [
+              {
+                "schema_name": "SingleToolBatchSchema",
+                "model": "openai/gpt-4o-2024-11-20",
+                "duration": 3.2808330059051514,
+                "usage": {
+                  "input_tokens": 5641,
+                  "output_tokens": 219,
+                  "extra": {
+                    "cached_input_tokens": 4608
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "NaMKyC6LAj",
+      "version": "0.4.0",
+      "session_id": "E3U63w1IfW",
+      "correlation_id": "RID(S5xny9cQLR)::nqUIJziq0y",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 10.13884687423706,
+              "usage": {
+                "input_tokens": 9189,
+                "output_tokens": 591,
+                "extra": {
+                  "cached_input_tokens": 0
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Hello there! It seems like you're testing the waters. How can I assist you today?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [
+            {
+              "id": "SY26-icEmX",
+              "name": "up-to-date-patient-medical-record",
+              "description": "Getting the patient the most up-to-date medical record",
+              "key": "guest",
+              "value": "Don't have information for this patient"
+            }
+          ],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 3.101155996322632,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.938901901245117,
+                  "usage": {
+                    "input_tokens": 5546,
+                    "output_tokens": 100,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.095515727996826,
+                  "usage": {
+                    "input_tokens": 5600,
+                    "output_tokens": 134,
+                    "extra": {
+                      "cached_input_tokens": 0
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.897963285446167,
+                  "usage": {
+                    "input_tokens": 5551,
+                    "output_tokens": 94,
+                    "extra": {
+                      "cached_input_tokens": 4608
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "SJqk7ifFRQ",
+      "version": "0.4.0",
+      "session_id": "E3U63w1IfW",
+      "correlation_id": "RID(Av6hBtjcCG)::kMQBgJPPqH",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 14.184550285339355,
+              "usage": {
+                "input_tokens": 9268,
+                "output_tokens": 539,
+                "extra": {
+                  "cached_input_tokens": 8320
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Just enjoying a quiet moment, I see! If there's anything specific you'd like to discuss or ask about, feel free to let me know. I'm here to help!"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [
+            {
+              "id": "SY26-icEmX",
+              "name": "up-to-date-patient-medical-record",
+              "description": "Getting the patient the most up-to-date medical record",
+              "key": "guest",
+              "value": "Don't have information for this patient"
+            }
+          ],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 5.3563008308410645,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 5.126986026763916,
+                  "usage": {
+                    "input_tokens": 5627,
+                    "output_tokens": 93,
+                    "extra": {
+                      "cached_input_tokens": 5120
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 5.350221395492554,
+                  "usage": {
+                    "input_tokens": 5681,
+                    "output_tokens": 130,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 5.221723556518555,
+                  "usage": {
+                    "input_tokens": 5632,
+                    "output_tokens": 96,
+                    "extra": {
+                      "cached_input_tokens": 4992
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "79Bh3h8bkY",
+      "version": "0.4.0",
+      "session_id": "E3U63w1IfW",
+      "correlation_id": "RID(JO9fMA-rXw)::K3nbyve50y",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 12.541034460067749,
+              "usage": {
+                "input_tokens": 9268,
+                "output_tokens": 630,
+                "extra": {
+                  "cached_input_tokens": 9216
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "That's alright! If there's anything specific you'd like to chat about or any questions you have, feel free to let me know. I'm here to help!"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [
+            {
+              "id": "SY26-icEmX",
+              "name": "up-to-date-patient-medical-record",
+              "description": "Getting the patient the most up-to-date medical record",
+              "key": "guest",
+              "value": "Don't have information for this patient"
+            }
+          ],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 3.7128705978393555,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.0422520637512207,
+                  "usage": {
+                    "input_tokens": 5627,
+                    "output_tokens": 104,
+                    "extra": {
+                      "cached_input_tokens": 5504
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.706028699874878,
+                  "usage": {
+                    "input_tokens": 5681,
+                    "output_tokens": 130,
+                    "extra": {
+                      "cached_input_tokens": 5632
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.1475422382354736,
+                  "usage": {
+                    "input_tokens": 5632,
+                    "output_tokens": 95,
+                    "extra": {
+                      "cached_input_tokens": 5504
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "FPS-bAfcIv",
+      "version": "0.4.0",
+      "session_id": "PUbbVCXvfL",
+      "correlation_id": "RID(V44mA2Ur9h)::w3PTu5iO1C",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 13.603453874588013,
+              "usage": {
+                "input_tokens": 9393,
+                "output_tokens": 732,
+                "extra": {
+                  "cached_input_tokens": 0
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Hello Sarah! How can I assist you today? If you have any questions about your upcoming appointment with Dr. Chen or anything else, feel free to let me know."
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [
+            {
+              "id": "SY26-icEmX",
+              "name": "up-to-date-patient-medical-record",
+              "description": "Getting the patient the most up-to-date medical record",
+              "key": "C9XHUuuk1J",
+              "value": {
+                "patient_id": "C9XHUuuk1J",
+                "name": "Sarah Johnson",
+                "contact": {
+                  "email": "maria.rodriguez@email.com",
+                  "phone": null
+                },
+                "medical_info": {
+                  "doctors": [
+                    "Dr. Chen"
+                  ],
+                  "appointments": [
+                    {
+                      "doctor": "Dr. Chen",
+                      "type": "Regular Appointment",
+                      "date": "2025-03-31",
+                      "time": "13:30",
+                      "location": null,
+                      "preparation": "arrive 15 minutes early"
+                    }
+                  ],
+                  "lab_work": [
+                    {
+                      "type": "basic metabolic panel",
+                      "ordered_by": "Dr. Chen",
+                      "date": "2025-03-28",
+                      "instructions": "You should come in 15 minutes early to have blood drawn before your appointment",
+                      "fasting_required": null
+                    }
+                  ],
+                  "medications": [],
+                  "conditions": [],
+                  "allergies": [],
+                  "preferences": []
+                },
+                "insurance_info": {
+                  "provider": null,
+                  "plan": null,
+                  "coverage_details": null,
+                  "referrals_required": null
+                }
+              }
+            }
+          ],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 10.832199573516846,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 10.829184532165527,
+                  "usage": {
+                    "input_tokens": 5806,
+                    "output_tokens": 123,
+                    "extra": {
+                      "cached_input_tokens": 4864
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 9.206424474716187,
+                  "usage": {
+                    "input_tokens": 5752,
+                    "output_tokens": 102,
+                    "extra": {
+                      "cached_input_tokens": 4864
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 8.900031566619873,
+                  "usage": {
+                    "input_tokens": 5757,
+                    "output_tokens": 93,
+                    "extra": {
+                      "cached_input_tokens": 4864
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "LuclZ6nHnU",
+      "version": "0.4.0",
+      "session_id": "curDFl7b2Q",
+      "correlation_id": "RID(jcjJyxN8GN)::kSeKVLZDwE",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 8.407036781311035,
+              "usage": {
+                "input_tokens": 9393,
+                "output_tokens": 539,
+                "extra": {
+                  "cached_input_tokens": 8576
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Hello Sarah! How can I assist you today with your medical needs?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [
+            {
+              "id": "SY26-icEmX",
+              "name": "up-to-date-patient-medical-record",
+              "description": "Getting the patient the most up-to-date medical record",
+              "key": "C9XHUuuk1J",
+              "value": {
+                "patient_id": "C9XHUuuk1J",
+                "name": "Sarah Johnson",
+                "contact": {
+                  "email": "maria.rodriguez@email.com",
+                  "phone": null
+                },
+                "medical_info": {
+                  "doctors": [
+                    "Dr. Chen"
+                  ],
+                  "appointments": [
+                    {
+                      "doctor": "Dr. Chen",
+                      "type": "Regular Appointment",
+                      "date": "2025-03-31",
+                      "time": "13:30",
+                      "location": null,
+                      "preparation": "arrive 15 minutes early"
+                    }
+                  ],
+                  "lab_work": [
+                    {
+                      "type": "basic metabolic panel",
+                      "ordered_by": "Dr. Chen",
+                      "date": "2025-03-28",
+                      "instructions": "You should come in 15 minutes early to have blood drawn before your appointment",
+                      "fasting_required": null
+                    }
+                  ],
+                  "medications": [],
+                  "conditions": [],
+                  "allergies": [],
+                  "preferences": []
+                },
+                "insurance_info": {
+                  "provider": null,
+                  "plan": null,
+                  "coverage_details": null,
+                  "referrals_required": null
+                }
+              }
+            }
+          ],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 3.670743703842163,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.6214635372161865,
+                  "usage": {
+                    "input_tokens": 5806,
+                    "output_tokens": 123,
+                    "extra": {
+                      "cached_input_tokens": 5248
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.439319372177124,
+                  "usage": {
+                    "input_tokens": 5752,
+                    "output_tokens": 102,
+                    "extra": {
+                      "cached_input_tokens": 0
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 3.663339853286743,
+                  "usage": {
+                    "input_tokens": 5757,
+                    "output_tokens": 96,
+                    "extra": {
+                      "cached_input_tokens": 5248
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "boGyzaSHfm",
+      "version": "0.4.0",
+      "session_id": "Rqj2daSHmH",
+      "correlation_id": "RID(ehtKQ4K9UV)::1yBhCwPkQD",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 13.761378526687622,
+              "usage": {
+                "input_tokens": 9399,
+                "output_tokens": 611,
+                "extra": {
+                  "cached_input_tokens": 8576
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Hello, Sarah! 😊 How can I assist you today with your medical needs? If you have any questions about your upcoming appointment or lab work, feel free to ask!"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [
+            {
+              "id": "SY26-icEmX",
+              "name": "up-to-date-patient-medical-record",
+              "description": "Getting the patient the most up-to-date medical record",
+              "key": "C9XHUuuk1J",
+              "value": {
+                "patient_id": "C9XHUuuk1J",
+                "name": "Sarah Johnson",
+                "contact": {
+                  "email": "maria.rodriguez@email.com",
+                  "phone": null
+                },
+                "medical_info": {
+                  "doctors": [
+                    "Dr. Chen"
+                  ],
+                  "appointments": [
+                    {
+                      "doctor": "Dr. Chen",
+                      "type": "Regular Appointment",
+                      "date": "2025-03-31",
+                      "time": "13:30",
+                      "location": null,
+                      "preparation": "arrive 15 minutes early"
+                    }
+                  ],
+                  "lab_work": [
+                    {
+                      "type": "basic metabolic panel",
+                      "ordered_by": "Dr. Chen",
+                      "date": "2025-03-28",
+                      "instructions": "You should come in 15 minutes early to have blood drawn before your appointment",
+                      "fasting_required": null
+                    }
+                  ],
+                  "medications": [],
+                  "conditions": [],
+                  "allergies": [],
+                  "preferences": []
+                },
+                "insurance_info": {
+                  "provider": null,
+                  "plan": null,
+                  "coverage_details": null,
+                  "referrals_required": null
+                }
+              }
+            }
+          ],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 9.84493637084961,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 9.842324495315552,
+                  "usage": {
+                    "input_tokens": 5809,
+                    "output_tokens": 124,
+                    "extra": {
+                      "cached_input_tokens": 4736
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 8.575607061386108,
+                  "usage": {
+                    "input_tokens": 5755,
+                    "output_tokens": 88,
+                    "extra": {
+                      "cached_input_tokens": 4736
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 8.682862520217896,
+                  "usage": {
+                    "input_tokens": 5760,
+                    "output_tokens": 93,
+                    "extra": {
+                      "cached_input_tokens": 4736
+                    }
+                  }
+                }
+              ]
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "w1GxcPg5TE",
+      "version": "0.4.0",
+      "session_id": "Rqj2daSHmH",
+      "correlation_id": "RID(y0Hkz-3g6j)::eDEAsaoJJ1",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "MessageSchema",
+              "model": "openai/gpt-4o-2024-08-06",
+              "duration": 13.746735095977783,
+              "usage": {
+                "input_tokens": 9513,
+                "output_tokens": 666,
+                "extra": {
+                  "cached_input_tokens": 8576
+                }
+              }
+            }
+          ],
+          "generation_names": [
+            "message_generation"
+          ],
+          "messages": [
+            "Your next appointment is scheduled with Dr. Chen on March 31, 2025, at 13:30. Please remember to arrive 15 minutes early. Let me know if there's anything else you need!"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [],
+          "context_variables": [
+            {
+              "id": "SY26-icEmX",
+              "name": "up-to-date-patient-medical-record",
+              "description": "Getting the patient the most up-to-date medical record",
+              "key": "C9XHUuuk1J",
+              "value": {
+                "patient_id": "C9XHUuuk1J",
+                "name": "Sarah Johnson",
+                "contact": {
+                  "email": "maria.rodriguez@email.com",
+                  "phone": null
+                },
+                "medical_info": {
+                  "doctors": [
+                    "Dr. Chen"
+                  ],
+                  "appointments": [
+                    {
+                      "doctor": "Dr. Chen",
+                      "type": "Regular Appointment",
+                      "date": "2025-03-31",
+                      "time": "13:30",
+                      "location": null,
+                      "preparation": "arrive 15 minutes early"
+                    }
+                  ],
+                  "lab_work": [
+                    {
+                      "type": "basic metabolic panel",
+                      "ordered_by": "Dr. Chen",
+                      "date": "2025-03-28",
+                      "instructions": "You should come in 15 minutes early to have blood drawn before your appointment",
+                      "fasting_required": null
+                    }
+                  ],
+                  "medications": [],
+                  "conditions": [],
+                  "allergies": [],
+                  "preferences": []
+                },
+                "insurance_info": {
+                  "provider": null,
+                  "plan": null,
+                  "coverage_details": null,
+                  "referrals_required": null
+                }
+              }
+            }
+          ],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 2.600184440612793,
+              "batches": [
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.493100166320801,
+                  "usage": {
+                    "input_tokens": 5919,
+                    "output_tokens": 92,
+                    "extra": {
+                      "cached_input_tokens": 5248
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.578127861022949,
+                  "usage": {
+                    "input_tokens": 5865,
+                    "output_tokens": 89,
+                    "extra": {
+                      "cached_input_tokens": 5248
+                    }
+                  }
+                },
+                {
+                  "schema_name": "GenericGuidelineMatchesSchema",
+                  "model": "openai/gpt-4o-2024-08-06",
+                  "duration": 2.5921761989593506,
+                  "usage": {
+                    "input_tokens": 5870,
+                    "output_tokens": 96,
+                    "extra": {
+                      "cached_input_tokens": 5248
                     }
                   }
                 }

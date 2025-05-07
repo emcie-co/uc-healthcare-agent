@@ -59,7 +59,7 @@ def _update_doctor_data(patient_id: str, doctor_name: str, scheduled_date: datet
 
 def _update_patient_data(patient_id: str, doctor_name: str, scheduled_date: datetime, reason: str) -> Optional[str]:
     patient_data = _load_data(Path(PATIENTSDB_PATH))
-    patient = next((pat for pat in patient_data if pat["patient_id"] == patient_id), None)
+    patient = next((entry["patient"] for entry in patient_data if entry["patient_id"] == patient_id), None)
     
     if patient is None:
         return f"No patient with the ID {patient_id}"
@@ -83,7 +83,7 @@ def _verify_update(patient_id: str, doctor_name: str, scheduled_date: datetime, 
     _date, _time = _format_datetime(scheduled_date)
     
     doctor = next((doc["doctor"] for doc in doctors_data if doc["doctor"]["name"] == doctor_name), None)
-    patient = next((pat for pat in patient_data if pat["patient_id"] == patient_id), None)
+    patient = next((entry["patient"] for entry in patient_data if entry["patient_id"] == patient_id), None)
     
     if not doctor:
         return {"error": f"Doctor {doctor_name} not found."}

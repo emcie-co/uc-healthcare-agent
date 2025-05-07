@@ -1,0 +1,5 @@
+[parlant]
+
+modules = [
+    "modules.appointments.module"
+]

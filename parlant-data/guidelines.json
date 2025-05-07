@@ -12,7 +12,7 @@
       "creation_utc": "2025-03-16T12:13:33.925770+00:00",
       "condition": "user starts the conversation",
       "action": "get medical information",
-      "enabled": true,
+      "enabled": false,
       "metadata": {}
     },
     {
@@ -21,7 +21,7 @@
       "creation_utc": "2025-03-17T11:13:45.294252+00:00",
       "condition": "user starts the conversation",
       "action": "start by greeting them",
-      "enabled": true,
+      "enabled": false,
       "metadata": {}
     },
     {
@@ -30,7 +30,7 @@
       "creation_utc": "2025-03-25T10:24:04.065394+00:00",
       "condition": "user requests to schedule an appointment and has appointments scheduled",
       "action": "notify of the currently scheduled appointment and ask if they want to reschedule any of them or to schedule a new one",
-      "enabled": true,
+      "enabled": false,
       "metadata": {}
     },
     {
@@ -39,7 +39,7 @@
       "creation_utc": "2025-03-31T11:12:09.547126+00:00",
       "condition": "user confirms the need to schedule a new appointment",
       "action": "provide the doctors next two available time slots",
-      "enabled": true,
+      "enabled": false,
       "metadata": {}
     },
     {
@@ -48,7 +48,7 @@
       "creation_utc": "2025-03-25T12:19:30.271172+00:00",
       "condition": "user chooses time slot for new appointment schedule with their doctor",
       "action": "assist and confirm the appointment in detail",
-      "enabled": true,
+      "enabled": false,
       "metadata": {}
     },
     {
@@ -57,7 +57,7 @@
       "creation_utc": "2025-04-27T13:54:03.718647+00:00",
       "condition": "user requests to reschedule an appointment",
       "action": "mention the appointments that are scheduled and ask which appointment they want to reschedule",
-      "enabled": true,
+      "enabled": false,
       "metadata": {}
     },
     {
@@ -66,7 +66,7 @@
       "creation_utc": "2025-04-27T13:43:00.919013+00:00",
       "condition": "user selects the appointment they want to reschedule",
       "action": "ask the user what day or time would work better for them to reschedule. Do not suggest time slots yet",
-      "enabled": true,
+      "enabled": false,
       "metadata": {}
     },
     {
@@ -75,7 +75,7 @@
       "creation_utc": "2025-04-27T13:45:07.520301+00:00",
       "condition": "user provides a preferred day or time for rescheduling",
       "action": "provide the doctor's next two available appointment slots based on the user's preference",
-      "enabled": true,
+      "enabled": false,
       "metadata": {}
     },
     {
@@ -84,7 +84,7 @@
       "creation_utc": "2025-04-27T13:49:54.919748+00:00",
       "condition": "user chooses appointment slot for rescheduling appointment with their doctor",
       "action": "assist and confirm the appointment in detail",
-      "enabled": true,
+      "enabled": false,
       "metadata": {}
     },
     {
@@ -93,7 +93,7 @@
       "creation_utc": "2025-04-28T09:01:11.719305+00:00",
       "condition": "user requests to cancel an appointment",
       "action": "mention the appointments that are scheduled if needed and ask which appointment they want to cancel",
-      "enabled": true,
+      "enabled": false,
       "metadata": {}
     },
     {
@@ -102,6 +102,33 @@
       "creation_utc": "2025-04-28T09:02:13.698316+00:00",
       "condition": "user chooses appointment they want to cancel",
       "action": "assist and confirm canceled appointment",
+      "enabled": false,
+      "metadata": {}
+    },
+    {
+      "id": "DlfqCIr8Pn",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T10:26:06.642830+00:00",
+      "condition": "patient asks to schedule an appointment",
+      "action": "ask the patient for their preferred time",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "VPYjjSpMQm",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T10:26:14.632105+00:00",
+      "condition": "patient gives preferred times for scheduling an appointment",
+      "action": "provide timeslots from 9:00AM to 11:00AM for morning preferences and 1:00PM to 5:00PM for afternoon preferences",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "m5fyRLCxx5",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-07T13:57:45.423093+00:00",
+      "condition": "patient asks about a doctor’s availability",
+      "action": "suggest the two most recent availability slots",
       "enabled": true,
       "metadata": {}
     }

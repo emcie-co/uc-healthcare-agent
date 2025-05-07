@@ -5,7 +5,82 @@
       "version": "0.2.0"
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "id": "SY26-icEmX",
+      "version": "0.2.0",
+      "name": "up-to-date-patient-medical-record",
+      "description": "Getting the patient the most up-to-date medical record",
+      "tool_id": "appointments:get_patient_data",
+      "freshness_rules": null
+    }
+  ],
   "variable_tag_associations": [],
-  "values": []
+  "values": [
+    {
+      "id": "tjOt6cKApn",
+      "version": "0.2.0",
+      "last_modified": "2025-05-07T15:48:02.702355+00:00",
+      "variable_id": "SY26-icEmX",
+      "key": "guest",
+      "data": "Don't have information for this patient"
+    },
+    {
+      "id": "rtDTPrGUQe",
+      "version": "0.2.0",
+      "last_modified": "2025-05-07T15:47:57.802833+00:00",
+      "variable_id": "SY26-icEmX",
+      "key": "DEFAULT",
+      "data": null
+    },
+    {
+      "id": "PhmjjSAknY",
+      "version": "0.2.0",
+      "last_modified": "2025-05-07T16:04:37.854012+00:00",
+      "variable_id": "SY26-icEmX",
+      "key": "C9XHUuuk1J",
+      "data": {
+        "patient_id": "C9XHUuuk1J",
+        "name": "Sarah Johnson",
+        "contact": {
+          "email": "maria.rodriguez@email.com",
+          "phone": null
+        },
+        "medical_info": {
+          "doctors": [
+            "Dr. Chen"
+          ],
+          "appointments": [
+            {
+              "doctor": "Dr. Chen",
+              "type": "Regular Appointment",
+              "date": "2025-03-31",
+              "time": "13:30",
+              "location": null,
+              "preparation": "arrive 15 minutes early"
+            }
+          ],
+          "lab_work": [
+            {
+              "type": "basic metabolic panel",
+              "ordered_by": "Dr. Chen",
+              "date": "2025-03-28",
+              "instructions": "You should come in 15 minutes early to have blood drawn before your appointment",
+              "fasting_required": null
+            }
+          ],
+          "medications": [],
+          "conditions": [],
+          "allergies": [],
+          "preferences": []
+        },
+        "insurance_info": {
+          "provider": null,
+          "plan": null,
+          "coverage_details": null,
+          "referrals_required": null
+        }
+      }
+    }
+  ]
 }

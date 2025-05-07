@@ -40,6 +40,13 @@
       "creation_utc": "2025-04-28T09:03:27.838010+00:00",
       "guideline_id": "DKnoYQPEh0",
       "tool_id": "appointments_management:cancel_appointment"
+    },
+    {
+      "id": "Pvkpv3u0Tb",
+      "version": "0.1.0",
+      "creation_utc": "2025-05-07T13:59:37.831404+00:00",
+      "guideline_id": "m5fyRLCxx5",
+      "tool_id": "appointments:get_doctors_availability"
     }
   ]
 }

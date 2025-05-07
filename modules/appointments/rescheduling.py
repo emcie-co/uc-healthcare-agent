@@ -10,9 +10,13 @@ PATIENTSDB_PATH = "./data/patients.json"
 DOCTORSDB_PATH = "./data/doctors.json"
 
 @tool
-def reschedule_appointment(context:ToolContext, doctor_name:str, scheduled_date:Annotated[datetime, ToolParameterOptions(
-    description="Need the date and time for rescheduling")], requested_date:Annotated[datetime, ToolParameterOptions(
+def reschedule_appointment(context:ToolContext, doctor_name:str, 
+    scheduled_date:Annotated[datetime, ToolParameterOptions(
+    description="Need the date and time for rescheduling")], 
+    requested_date:Annotated[datetime, ToolParameterOptions(
     description="Need the date and time for rescheduling")]) -> ToolResult:
+    
+    requested_date_slot, requested_time_slot = _format_datetime(requested_date)
 
     updated_doctor_result = _update_doctor_data(context.customer_id, doctor_name, scheduled_date, requested_date)
     if updated_doctor_result:
@@ -26,7 +30,13 @@ def reschedule_appointment(context:ToolContext, doctor_name:str, scheduled_date:
     if "error" in verified_result:
         return ToolResult(verified_result["error"])
     
-    return ToolResult("")
+    return ToolResult(
+        data="Appointment rescheduled successfully",
+        utterance_fields={
+            "doctor_name": doctor_name,
+            "requested_date_slot": requested_date_slot,
+            "requested_time_slot": requested_time_slot,
+        })
 
 def _update_doctor_data(patient_id:str, doctor_name:str, scheduled_date:datetime, requested_date:datetime) -> Optional[str]:
     doctors_data = _load_data(Path(DOCTORSDB_PATH))
@@ -76,7 +86,7 @@ def _update_doctor_data(patient_id:str, doctor_name:str, scheduled_date:datetime
 
 def _update_patient_data(patient_id:str, doctor_name:str, scheduled_date:datetime, requested_date:datetime) -> Optional[str]:
     patient_data = _load_data(Path(PATIENTSDB_PATH))
-    patient = next((pat for pat in patient_data if pat["patient_id"] == patient_id), None)
+    patient = next((entry["patient"] for entry in patient_data if entry["patient_id"] == patient_id), None)
     scheduled_date_slot, scheduled_time_slot = _format_datetime(scheduled_date)
     requested_date_slot, requested_time_slot = _format_datetime(requested_date)
     
@@ -134,7 +144,7 @@ def _verify_update(patient_id:str, doctor_name:str, scheduled_date:datetime, req
         print(doctor_patient_upcoming_non_match)
         return {"error": "6. Issue with the appointment rescheduling."}
         
-    patient = next((pat for pat in patient_data if pat["patient_id"] == patient_id), None)
+    patient = next((entry["patient"] for entry in patient_data if entry["patient_id"] == patient_id), None)
     if patient is None:  
         return {"error": f"Patient {patient_id} not found."}
     

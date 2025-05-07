@@ -1,53 +1,46 @@
 [
     {
-        "patient_id": "C9XHUuuk1J",
-        "name": "Sarah Johnson",
-        "contact": {
-            "email": "maria.rodriguez@email.com",
-            "phone": null
-        },
-        "medical_info": {
-            "doctors": [
-                "Dr. Chen"
-            ],
-            "appointments": [
-                {
-                    "doctor": "Dr. Chen",
-                    "type": "Regular Appointment",
-                    "date": "2025-03-31",
-                    "time": "13:30",
-                    "location": null,
-                    "preparation": "Nothing special. Bring your current medications and any medical record you want the doctor to view"
-                },
-                {
-                    "doctor": "Dr. Chen",
-                    "type": "Annual Physical",
-                    "date": "2025-04-04",
-                    "time": "09:30",
-                    "location": null,
-                    "status": "scheduled",
-                    "preparation": "Bring your complete medication list, immunization records, and come fasting if bloodwork is planned (water is permitted)."
-                }
-            ],
-            "lab_work": [
-                {
-                    "type": "basic metabolic panel",
-                    "ordered_by": "Dr. Chen",
-                    "date": "2025-03-28",
-                    "instructions": "arrive 15 minutes early",
-                    "fasting_required": null
-                }
-            ],
-            "medications": [],
-            "conditions": [],
-            "allergies": [],
-            "preferences": []
-        },
-        "insurance_info": {
-            "provider": null,
-            "plan": null,
-            "coverage_details": null,
-            "referrals_required": null
+        "patient": {
+            "patient_id": "C9XHUuuk1J",
+            "name": "Sarah Johnson",
+            "contact": {
+                "email": "maria.rodriguez@email.com",
+                "phone": null
+            },
+            "medical_info": {
+                "doctors": [
+                    "Dr. Chen"
+                ],
+                "appointments": [
+                    {
+                        "doctor": "Dr. Chen",
+                        "type": "Regular Appointment",
+                        "date": "2025-03-31",
+                        "time": "13:30",
+                        "location": null,
+                        "preparation": "arrive 15 minutes early"
+                    }
+                ],
+                "lab_work": [
+                    {
+                        "type": "basic metabolic panel",
+                        "ordered_by": "Dr. Chen",
+                        "date": "2025-03-28",
+                        "instructions": "You should come in 15 minutes early to have blood drawn before your appointment",
+                        "fasting_required": null
+                    }
+                ],
+                "medications": [],
+                "conditions": [],
+                "allergies": [],
+                "preferences": []
+            },
+            "insurance_info": {
+                "provider": null,
+                "plan": null,
+                "coverage_details": null,
+                "referrals_required": null
+            }
         }
     }
 ]
