@@ -1,8 +1,8 @@
 from pathlib import Path
 from parlant.core.services.tools.plugins import tool
 from parlant.core.tools import ToolContext, ToolResult
-from utils.date_utils import _sort_datetime
-from utils.json_utils import _load_data
+from helpers.date import _sort_datetime
+from helpers.json import _load_data
 
 
 PATIENTSDB_PATH = "./data/patients.json"
@@ -40,9 +40,13 @@ def get_doctors_availability(context: ToolContext, doctor_name:str) -> ToolResul
     if doctor is None:
         return ToolResult(f"No doctor with the name {doctor_name}")
     
+    print(doctor)
+    
     availabilities = doctor["scheduling"]["availability"]
     sorted_availability = _sort_datetime(availabilities)
-    sorted_availability = availabilities
+    availabilities = sorted_availability
+    
+    print(availabilities)
     
     first_two_slots = []
     for entry in sorted_availability:
@@ -55,7 +59,7 @@ def get_doctors_availability(context: ToolContext, doctor_name:str) -> ToolResul
                 break
 
     return ToolResult(
-        data=sorted_availability,
+        data=availabilities,
         utterance_fields={
             "doctor_name": doctor_name,
             "first_date_slot": first_two_slots[0]["date"],

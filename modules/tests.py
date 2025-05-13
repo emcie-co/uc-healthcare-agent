@@ -1,4 +1,5 @@
 from typing import Any, Dict, List
+from datetime import datetime
 
 
 def get_data()->Dict[str,Any]:
@@ -20,6 +21,9 @@ def get_data()->Dict[str,Any]:
         "item3": item3
     }
     
-slots, slot3 = get_data().values()
-slot3["price"] = 35.0
-print(slots)
+# slots, slot3 = get_data().values()
+# slot3["price"] = 35.0
+# print(slots)
+
+today = datetime.today()
+print(today)

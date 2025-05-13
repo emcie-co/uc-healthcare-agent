@@ -7,9 +7,11 @@ from parlant.sdk import (
 )
 
 from modules.appointments.general import get_patient_data, get_doctors_availability
-from modules.appointments.scheduling import schedule_appointment 
-from modules.appointments.rescheduling import reschedule_appointment
+# from modules.appointments.scheduling import schedule_appointment 
+# from modules.appointments.rescheduling import reschedule_appointment
 from modules.appointments.canceling import cancel_appointment
+
+from modules.appointments.tests import schedule_appointment, reschedule_appointment
 
 EXIT_STACK = AsyncExitStack()
 

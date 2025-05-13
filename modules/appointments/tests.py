@@ -1,37 +1,33 @@
 from datetime import datetime
-from pathlib import Path
-from typing import Annotated, Any, Optional
+from typing import Annotated
 from parlant.core.services.tools.plugins import tool
 from parlant.core.tools import ToolContext, ToolResult, ToolParameterOptions
-from utils.date_utils import _format_datetime
-from utils.json_utils import _load_data, _update_data
+from modules.appointments._constants import AppointmentType
 
-PATIENTSDB_PATH = "./data/patients.json"
-DOCTORSDB_PATH = "./data/doctors.json"
-
-doctor_name = "Dr. Chen"
-# doctors_data = _load_data(Path(DOCTORSDB_PATH))
-patient_data = _load_data(Path(PATIENTSDB_PATH))
-# doctor = next((doc["doctor"] for doc in doctors_data if doc["doctor"]["name"] == doctor_name), None)
-patient = next((pat for pat in patient_data if pat["patient_id"] == "C9XHUuuk1J"), None)
-
-if patient:
-    patient_appointments = patient["medical_info"]["appointments"]
-    print(patient_appointments)
+@tool
+def schedule_appointment(context:ToolContext, doctor_name: str, requested_slot:datetime, appointment_type:AppointmentType = AppointmentType.REGULAR, )-> ToolResult:
+    print({
+        "context.customer_id": context.customer_id,
+        "doctor_name": doctor_name,
+        "requested_slot": requested_slot,
+        "appointment_type": appointment_type
+    })
+        
+    return ToolResult(f"Appointment scheduled with {doctor_name} on {requested_slot}.")
 
 
-
-
-
-# patient_appointment = patient["medical_info"]["appointments"]
-
-
-# if not patient_appointment:
-#     print(f"No appointments found for patient {patient['patient_id']}")
-
-# patient_booked_appointment = next((entry for entry in patient_appointment if entry["date"] == "2025-03-30" and entry["time"] == "10:30"), None)
-
-# if not patient_booked_appointment:
-#     print(f"Patient {doctor_name} not found in doctor's records.")
-
-# print(doctor)
+@tool
+def reschedule_appointment(context:ToolContext, doctor_name:str, 
+    scheduled_date:Annotated[datetime, ToolParameterOptions(
+    description="Need the date and time for rescheduling")], 
+    requested_date:Annotated[datetime, ToolParameterOptions(
+    description="Need the date and time for rescheduling")]) -> ToolResult:
+    
+    print({
+        "context.customer_id": context.customer_id,
+        "doctor_name": doctor_name,
+        "scheduled_date": scheduled_date,
+        "requested_date": requested_date
+    })
+        
+    return ToolResult(f"Appointment rescheduled with {doctor_name} on {requested_date}.")

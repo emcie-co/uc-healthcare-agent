@@ -3,8 +3,8 @@ from pathlib import Path
 from typing import Any, Optional,Annotated
 from parlant.core.services.tools.plugins import tool
 from parlant.core.tools import ToolContext, ToolResult, ToolParameterOptions
-from utils.date_utils import _format_datetime
-from utils.json_utils import _load_data, _update_data
+from helpers.date import _format_datetime
+from helpers.json import _load_data, _update_data
 
 PATIENTSDB_PATH = "./data/patients.json"
 DOCTORSDB_PATH = "./data/doctors.json"

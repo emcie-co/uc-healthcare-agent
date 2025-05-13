@@ -3,8 +3,9 @@ from pathlib import Path
 from typing import Any, Optional
 from parlant.core.services.tools.plugins import tool
 from parlant.core.tools import ToolContext, ToolResult
-from utils.date_utils import _format_datetime
-from utils.json_utils import _load_data, _update_data
+from helpers.date import _format_datetime
+from helpers.json import _load_data, _update_data
+from helpers.general import find_entity, match_availability, match_slot, remove_time_from_availability
 
 from modules.appointments._constants import AppointmentType, PREPARATION_INSTRUCTIONS
 
@@ -13,6 +14,7 @@ DOCTORSDB_PATH = "./data/doctors.json"
 
 @tool
 def schedule_appointment(context:ToolContext, doctor_name: str, requested_slot:datetime, appointment_type:AppointmentType = AppointmentType.REGULAR)-> ToolResult:
+    
     updated_doctor_result = _update_doctor_data(context.customer_id, doctor_name, requested_slot, appointment_type)
     if updated_doctor_result:
         return ToolResult(updated_doctor_result)
@@ -29,44 +31,50 @@ def schedule_appointment(context:ToolContext, doctor_name: str, requested_slot:d
 
 def _update_doctor_data(patient_id: str, doctor_name:str, requested_slot:datetime, appointment_type:AppointmentType) -> Optional[str]:
     doctors_data = _load_data(Path(DOCTORSDB_PATH))
-    doctor = next((doc["doctor"] for doc in doctors_data if doc["doctor"]["name"] == doctor_name), None)
+    patients_data = _load_data(Path(PATIENTSDB_PATH))
+    
+    doctor = find_entity(doctors_data, "doctor", "name", doctor_name)
+    patient = find_entity(patients_data, "patient", "patient_id", patient_id)
     
     if doctor is None:
         return f"Doctor {doctor_name} not found."
-    
-    availabilities = doctor["scheduling"]["availability"]
-    upcoming_appointments = next((entry["upcoming_appointments"] for entry in doctor["patients"] if entry["patient_id"] == patient_id), None)
-    
-    if upcoming_appointments is None:
-        return f"Doctor {doctor_name} has no upcoming appointments."
+    if patient is None:
+        return f"Patient {patient_id} not found."
     
     _date, _time = _format_datetime(requested_slot)
-    matched_slot = next((entry for entry in availabilities if entry["date"] == _date and _time in entry["times"]), None)
+    slot = match_availability(doctor["scheduling"]["availability"], _date, _time)
     
-    if matched_slot is None:
+    if slot is None:
         return f"Doctor {doctor_name} is not available at {requested_slot}."
     
-    #  remove the times from the availability slot. If there are no more times in the availability slot, remove the date from the availabilities
-    if matched_slot["times"] and len(matched_slot["times"]) > 1:
-        matched_slot["times"].remove(_time)
-    else:
-        availabilities.remove(matched_slot)
-        
-    upcoming_appointments.append(
-        {
-            "date": _date,
-            "time": _time,
-            "type": appointment_type.value,
-            "lab_work_ordered": "--basic metabolic panel",
-        })
+    remove_time_from_availability(doctor["scheduling"]["availability"], slot, _time)
+    
+    patients = doctor.setdefault("patients", [])
+    patient_record = next((p for p in patients if p["patient_id"] == patient_id), None)
+    if patient_record is None:
+        patient_record = {
+            "patient_id": patient_id,
+            "name": patient["name"],
+            "relationship": "primary care",
+            "last_visit": "null",
+            "upcoming_appointments": [],
+        }
+        patients.append(patient_record)
+    
+        patient_record.setdefault("upcoming_appointments", []).append({
+        "date": _date,
+        "time": _time,
+        "type": appointment_type.value,
+        "lab_work_ordered": "--basic metabolic panel",
+    })
     
     _update_data(Path(DOCTORSDB_PATH), doctors_data)
     
     return None
 
 def _update_patient_data(patient_id: str, doctor_name:str, requested_slot:datetime, appointment_type:AppointmentType) -> Optional[str]:
-    patient_data = _load_data(Path(PATIENTSDB_PATH))
-    patient = next((entry["patient"] for entry in patient_data if entry["patient_id"] == patient_id), None)
+    patients_data = _load_data(Path(PATIENTSDB_PATH))
+    patient = find_entity(patients_data, "patient", "patient_id", patient_id)
     _date, _time = _format_datetime(requested_slot)
     
     if patient is None:
@@ -84,37 +92,38 @@ def _update_patient_data(patient_id: str, doctor_name:str, requested_slot:dateti
             "preparation": PREPARATION_INSTRUCTIONS[appointment_type],
         }
     )
-    _update_data(Path(PATIENTSDB_PATH), patient_data)
+    _update_data(Path(PATIENTSDB_PATH), patients_data)
+    
     return None
 
-def _verify_update(patient_id: str, doctor_name:str, requested_slot:datetime) -> dict[Any, str]:
+def _verify_update(patient_id: str, doctor_name:str, requested_slot:datetime) -> dict[str, Any]:
     doctors_data = _load_data(Path(DOCTORSDB_PATH))
-    patient_data = _load_data(Path(PATIENTSDB_PATH))
+    patients_data = _load_data(Path(PATIENTSDB_PATH))
     _date, _time = _format_datetime(requested_slot)
     
-    doctor = next((doc["doctor"] for doc in doctors_data if doc["doctor"]["name"] == doctor_name), None)
-    patient = next((entry["patient"] for entry in patient_data if entry["patient_id"] == patient_id), None)
+    doctor = find_entity(doctors_data, "doctor", "name", doctor_name)
+    patient = find_entity(patients_data, "patient", "patient_id", patient_id)
     
     if doctor is None:
         return {"error": f"Doctor {doctor_name} not found."}
     
-    doctor_data_patient = next((entry for entry in doctor["patients"] if entry["patient_id"] == patient_id), None)
-    if doctor_data_patient is None:
+    patient_from_doctor = next((p for p in doctor["patients"] if p["patient_id"] == patient_id), None)
+    
+    if patient_from_doctor is None:
         return {"error": f"Patient {patient_id} not found in doctor's records."}
     
-    doctors_booked_appointments = next((entry for entry in doctor_data_patient["upcoming_appointments"] if entry["date"] == _date and entry["time"] == _time), None)
-    if doctors_booked_appointments is None:
+    booked_from_doctor = match_slot(patient_from_doctor["upcoming_appointments"], _date, _time)
+    if booked_from_doctor is None:
         return {"error": f"Doctor {doctor_name} has no appointments for that time."}
-    
     
     if patient is None:
         return {"error": f"Patient {patient_id} not found."}
     
-    patient_booked_appointment = next((entry for entry in patient["medical_info"]["appointments"] if entry["date"] == _date and entry["time"] == _time), None)
-    if patient_booked_appointment is None:
+    booked_from_patient = match_slot(patient["medical_info"]["appointments"], _date, _time)
+    if booked_from_patient is None:
         return {"error": f"Patient {patient_id} has no appointments for that time."}
     
     return {
-        "patient": doctors_booked_appointments,
-        "doctor": patient_booked_appointment,
+        "patient": booked_from_doctor,
+        "doctor": booked_from_patient,
     }

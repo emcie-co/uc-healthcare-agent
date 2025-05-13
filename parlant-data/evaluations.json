@@ -2,8 +2,92 @@
   "metadata": [
     {
       "id": "1ekgtHKyvk",
-      "version": "0.1.0"
+      "version": "0.2.0"
     }
   ],
-  "evaluations": []
+  "evaluations": [
+    {
+      "id": "kiVrCHA97h",
+      "version": "0.2.0",
+      "creation_utc": "2025-05-12T08:02:18.741299+00:00",
+      "status": "COMPLETED",
+      "error": null,
+      "invoices": [
+        {
+          "kind": "GUIDELINE",
+          "payload": {
+            "content": {
+              "condition": "patient asks for doctor's availability",
+              "action": null
+            },
+            "tool_ids": [
+              [
+                "appointments",
+                "get_doctors_availability"
+              ]
+            ],
+            "action": "add",
+            "updated_id": null,
+            "coherence_check": false,
+            "connection_proposition": false,
+            "action_proposition": true,
+            "properties_proposition": true
+          },
+          "checksum": "b2e679d88a90e48be7c15002d207b0c2",
+          "state_version": "-6712619189867407089",
+          "approved": true,
+          "data": {
+            "coherence_checks": null,
+            "connection_propositions": null,
+            "action_proposition": "Provide the doctor's availability.",
+            "properties_proposition": null
+          },
+          "error": null
+        }
+      ],
+      "progress": 100.0
+    },
+    {
+      "id": "F3VEK4Ci6B",
+      "version": "0.2.0",
+      "creation_utc": "2025-05-12T08:04:16.294561+00:00",
+      "status": "COMPLETED",
+      "error": null,
+      "invoices": [
+        {
+          "kind": "GUIDELINE",
+          "payload": {
+            "content": {
+              "condition": "patient asks about their lab work",
+              "action": null
+            },
+            "tool_ids": [
+              [
+                "appointments",
+                "get_patient_data"
+              ]
+            ],
+            "action": "add",
+            "updated_id": null,
+            "coherence_check": false,
+            "connection_proposition": false,
+            "action_proposition": true,
+            "properties_proposition": true
+          },
+          "checksum": "f20f082dacee96d2ec0410a9bf758519",
+          "state_version": "-6712619189867407089",
+          "approved": true,
+          "data": {
+            "coherence_checks": null,
+            "connection_propositions": null,
+            "action_proposition": "Retrieve the patient's lab work information.",
+            "properties_proposition": null
+          },
+          "error": null
+        }
+      ],
+      "progress": 100.0
+    }
+  ],
+  "evaluation_tag_associations": []
 }

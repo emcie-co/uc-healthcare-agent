@@ -1,0 +1,33 @@
+{
+  "metadata": [
+    {
+      "id": "feKRqUUtGN",
+      "version": "0.1.0"
+    }
+  ],
+  "customers": [
+    {
+      "id": "C9XHUuuk1J",
+      "version": "0.1.0",
+      "creation_utc": "2025-03-16T12:08:00.588981+00:00",
+      "name": "Sarah Johnson",
+      "extra": {}
+    }
+  ],
+  "customer_tag_associations": [
+    {
+      "id": "W1VUwxzzcS",
+      "version": "0.2.0",
+      "creation_utc": "2025-03-16T12:08:00.588981+00:00",
+      "customer_id": "C9XHUuuk1J",
+      "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "32bxNs2VM1",
+      "version": "0.2.0",
+      "creation_utc": "2025-04-08T11:57:16.607393+00:00",
+      "customer_id": "HhfpIu56au",
+      "tag_id": "9b6t8F2o8V"
+    }
+  ]
+}

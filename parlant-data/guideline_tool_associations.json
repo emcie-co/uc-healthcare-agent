@@ -7,46 +7,39 @@
   ],
   "associations": [
     {
-      "id": "fRECSvDOQp",
-      "version": "0.1.0",
-      "creation_utc": "2025-04-27T11:21:36.896055+00:00",
-      "guideline_id": "ZIHCrWgNqJ",
-      "tool_id": "appointments_management:get_patient_data"
-    },
-    {
-      "id": "Qp9oqVUOJf",
-      "version": "0.1.0",
-      "creation_utc": "2025-04-27T11:25:04.346847+00:00",
-      "guideline_id": "KKZDjeQIB3",
-      "tool_id": "appointments_management:get_doctors_availability"
-    },
-    {
       "id": "EWr1UttEw4",
       "version": "0.1.0",
       "creation_utc": "2025-04-27T11:37:36.892363+00:00",
       "guideline_id": "f6O6EtioWv",
-      "tool_id": "appointments_management:schedule_appointment"
+      "tool_id": "appointments:schedule_appointment"
     },
     {
       "id": "jjn0LDM5i9",
       "version": "0.1.0",
       "creation_utc": "2025-04-27T13:50:49.755693+00:00",
       "guideline_id": "GhI7h2YrNT",
-      "tool_id": "appointments_management:reschedule_appointment"
+      "tool_id": "appointments:reschedule_appointment"
     },
     {
-      "id": "lJQhm6c0t5",
+      "id": "RZ2AxcM-r9",
       "version": "0.1.0",
-      "creation_utc": "2025-04-28T09:03:27.838010+00:00",
-      "guideline_id": "DKnoYQPEh0",
-      "tool_id": "appointments_management:cancel_appointment"
-    },
-    {
-      "id": "Pvkpv3u0Tb",
-      "version": "0.1.0",
-      "creation_utc": "2025-05-07T13:59:37.831404+00:00",
-      "guideline_id": "m5fyRLCxx5",
+      "creation_utc": "2025-05-08T20:52:51.119984+00:00",
+      "guideline_id": "zD4j1xrfZs",
       "tool_id": "appointments:get_doctors_availability"
+    },
+    {
+      "id": "iuPNHCf9SQ",
+      "version": "0.1.0",
+      "creation_utc": "2025-05-11T09:13:05.888573+00:00",
+      "guideline_id": "KKZDjeQIB3",
+      "tool_id": "appointments:get_doctors_availability"
+    },
+    {
+      "id": "Z2F9KtkH5l",
+      "version": "0.1.0",
+      "creation_utc": "2025-05-12T23:07:20.640457+00:00",
+      "guideline_id": "wQVHEFGZvG",
+      "tool_id": "appointments:get_patient_data"
     }
   ]
 }

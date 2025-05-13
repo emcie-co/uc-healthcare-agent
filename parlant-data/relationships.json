@@ -1,5 +1,36 @@
 {
-  "relationships": [],
+  "relationships": [
+    {
+      "id": "BbrfUNiHYn",
+      "version": "0.3.0",
+      "creation_utc": "2025-05-12T08:40:45.640028+00:00",
+      "source": "appointments:schedule_appointment",
+      "source_type": "tool",
+      "target": "appointments:reschedule_appointment",
+      "target_type": "tool",
+      "kind": "overlap"
+    },
+    {
+      "id": "Ti3BCe6mMD",
+      "version": "0.3.0",
+      "creation_utc": "2025-05-11T22:27:13.034234+00:00",
+      "source": "9b6t8F2o8V",
+      "source_type": "tag",
+      "target": "KEcTKASxFv",
+      "target_type": "tag",
+      "kind": "overlap"
+    },
+    {
+      "id": "9glT6TfpQz",
+      "version": "0.3.0",
+      "creation_utc": "2025-05-11T22:33:01.665996+00:00",
+      "source": "a28RA0mWge",
+      "source_type": "guideline",
+      "target": "GhI7h2YrNT",
+      "target_type": "guideline",
+      "kind": "priority"
+    }
+  ],
   "metadata": [
     {
       "id": "ldAaWX-b6v",

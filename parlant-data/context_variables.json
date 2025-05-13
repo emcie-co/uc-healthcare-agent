@@ -7,7 +7,7 @@
   ],
   "variables": [
     {
-      "id": "SY26-icEmX",
+      "id": "NCTFRlKagl",
       "version": "0.2.0",
       "name": "up-to-date-patient-medical-record",
       "description": "Getting the patient the most up-to-date medical record",
@@ -15,35 +15,35 @@
       "freshness_rules": null
     }
   ],
-  "variable_tag_associations": [],
+  "variable_tag_associations": [
+    {
+      "id": "g1y0-jlxvh",
+      "version": "0.2.0",
+      "creation_utc": "2025-05-13T10:48:57.716899+00:00",
+      "variable_id": "NCTFRlKagl",
+      "tag_id": "9b6t8F2o8V"
+    }
+  ],
   "values": [
     {
-      "id": "tjOt6cKApn",
+      "id": "oz72lLxJXA",
       "version": "0.2.0",
-      "last_modified": "2025-05-07T15:48:02.702355+00:00",
-      "variable_id": "SY26-icEmX",
-      "key": "guest",
-      "data": "Don't have information for this patient"
-    },
-    {
-      "id": "rtDTPrGUQe",
-      "version": "0.2.0",
-      "last_modified": "2025-05-07T15:47:57.802833+00:00",
-      "variable_id": "SY26-icEmX",
-      "key": "DEFAULT",
+      "last_modified": "2025-05-13T10:49:49.516523+00:00",
+      "variable_id": "NCTFRlKagl",
+      "key": "tag:9b6t8F2o8V",
       "data": null
     },
     {
-      "id": "PhmjjSAknY",
+      "id": "PK7MI0NoO7",
       "version": "0.2.0",
-      "last_modified": "2025-05-07T16:04:37.854012+00:00",
-      "variable_id": "SY26-icEmX",
+      "last_modified": "2025-05-13T12:18:19.269168+00:00",
+      "variable_id": "NCTFRlKagl",
       "key": "C9XHUuuk1J",
       "data": {
         "patient_id": "C9XHUuuk1J",
         "name": "Sarah Johnson",
         "contact": {
-          "email": "maria.rodriguez@email.com",
+          "email": "sarah.johnson@email.com",
           "phone": null
         },
         "medical_info": {
