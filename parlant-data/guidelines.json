@@ -13,7 +13,10 @@
       "condition": "patient requests to schedule a new appointment and has an appointment scheduled",
       "action": "refer the patient's scheduled appointment and ask if they would prefer rescheduling it instead",
       "enabled": true,
-      "metadata": {}
+      "metadata": {
+        "topic": "appointment",
+        "subtopic": "scheduling"
+      }
     },
     {
       "id": "KKZDjeQIB3",
@@ -22,7 +25,10 @@
       "condition": "patient confirms the need to schedule a new appointment",
       "action": "provide the doctor's next two available appointment slots",
       "enabled": true,
-      "metadata": {}
+      "metadata": {
+        "topic": "appointment",
+        "subtopic": "scheduling"
+      }
     },
     {
       "id": "f6O6EtioWv",
@@ -31,7 +37,10 @@
       "condition": "patient chooses time slot for scheduling a new appointment",
       "action": "assist and confirm the appointment in detail",
       "enabled": true,
-      "metadata": {}
+      "metadata": {
+        "topic": "appointment",
+        "subtopic": "scheduling"
+      }
     },
     {
       "id": "wQVHEFGZvG",
@@ -40,7 +49,10 @@
       "condition": "patient requests to reschedule an appointment",
       "action": "mention the patient’s next scheduled appointments and ask which appointment they want to reschedule",
       "enabled": true,
-      "metadata": {}
+      "metadata": {
+        "topic": "appointment",
+        "subtopic": "rescheduling"
+      }
     },
     {
       "id": "zlGjOSgP0q",
@@ -49,7 +61,10 @@
       "condition": "patient chooses the appointment they want to reschedule",
       "action": "ask the patient what day or time would work better for them to reschedule",
       "enabled": true,
-      "metadata": {}
+      "metadata": {
+        "topic": "appointment",
+        "subtopic": "rescheduling"
+      }
     },
     {
       "id": "zD4j1xrfZs",
@@ -58,7 +73,10 @@
       "condition": "patient provides a preferred times for rescheduling",
       "action": "provide the doctor's next two available appointment slots based on the patient's preference",
       "enabled": true,
-      "metadata": {}
+      "metadata": {
+        "topic": "appointment",
+        "subtopic": "rescheduling"
+      }
     },
     {
       "id": "GhI7h2YrNT",
@@ -67,7 +85,10 @@
       "condition": "patient chooses appointment slot for rescheduling with their doctor",
       "action": "assist and confirm the appointment in detail",
       "enabled": true,
-      "metadata": {}
+      "metadata": {
+        "topic": "appointment",
+        "subtopic": "rescheduling"
+      }
     },
     {
       "id": "5m4g62JNRN",
@@ -76,7 +97,10 @@
       "condition": "patient asks to schedule an appointment",
       "action": "ask the patient for their preferred time",
       "enabled": false,
-      "metadata": {}
+      "metadata": {
+        "topic": "appointment",
+        "subtopic": "scheduling"
+      }
     },
     {
       "id": "aG0MDKN8Np",
@@ -85,7 +109,77 @@
       "condition": "patient gives preferred times for scheduling an appointment",
       "action": "provide timeslots from 9:00AM to 11:00AM for morning preferences and 1:00PM to 5:00PM for afternoon preferences",
       "enabled": false,
+      "metadata": {
+        "topic": "appointment",
+        "subtopic": "scheduling"
+      }
+    },
+    {
+      "id": "K1dWVduejh",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-19T17:20:02.148207+00:00",
+      "condition": "patient expresses an issue with their prescription",
+      "action": "ask which prescription are they having an issue with",
+      "enabled": false,
       "metadata": {}
+    },
+    {
+      "id": "IuMYwvnMb1",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-19T18:48:54.662444+00:00",
+      "condition": "patient tells which prescription are they having the issue with",
+      "action": "confirm their prescription name listed in their record with its dosage ask for relevant information to help investigate the issue",
+      "enabled": false,
+      "metadata": {}
+    },
+    {
+      "id": "xd28dQLpuY",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-19T19:12:32.453472+00:00",
+      "condition": "patient mensions connection between prescription and insurance",
+      "action": "state any changes made by the patient's insurance their prescription",
+      "enabled": false,
+      "metadata": {}
+    },
+    {
+      "id": "UFTzf6wmpG",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-19T20:24:31.544349+00:00",
+      "condition": "patient disagrees with the insurance change",
+      "action": "create an authorization request and notify the client of the action you did",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "HCgTUuuO-L",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-19T22:03:06.398383+00:00",
+      "condition": "authrization request was made on medication status",
+      "action": "ask if they have enough medication until request is answered",
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "14FqLHmeXd",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-19T23:50:52.948544+00:00",
+      "condition": "patient reports a prescription issue",
+      "action": null,
+      "enabled": true,
+      "metadata": {}
+    },
+    {
+      "id": "vSbbPU5iKO",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-20T10:56:02.748597+00:00",
+      "condition": "patient says banana",
+      "action": null,
+      "enabled": true,
+      "metadata": {
+        "journeys": [
+          "BiYuoerl41"
+        ]
+      }
     }
   ],
   "guideline_tag_associations": [
@@ -137,6 +231,62 @@
       "creation_utc": "2025-04-27T13:54:03.718647+00:00",
       "guideline_id": "wQVHEFGZvG",
       "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "xmm7wQhEkZ",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-19T17:20:25.269382+00:00",
+      "guideline_id": "K1dWVduejh",
+      "tag_id": "lBasb1M7T4"
+    },
+    {
+      "id": "8yH7W53Rb2",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-19T18:49:18.822587+00:00",
+      "guideline_id": "IuMYwvnMb1",
+      "tag_id": "lBasb1M7T4"
+    },
+    {
+      "id": "U9H0x76sRK",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-19T19:12:32.453472+00:00",
+      "guideline_id": "xd28dQLpuY",
+      "tag_id": "lBasb1M7T4"
+    },
+    {
+      "id": "RoM8nzeK08",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-19T20:24:31.544349+00:00",
+      "guideline_id": "UFTzf6wmpG",
+      "tag_id": "lBasb1M7T4"
+    },
+    {
+      "id": "ZA-NpZwl3R",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-19T22:03:06.398383+00:00",
+      "guideline_id": "HCgTUuuO-L",
+      "tag_id": "lBasb1M7T4"
+    },
+    {
+      "id": "GHNVVBTb7x",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-19T23:50:52.953600+00:00",
+      "guideline_id": "14FqLHmeXd",
+      "tag_id": "journey:BiYuoerl41"
+    },
+    {
+      "id": "sjUVjO1v4P",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-20T10:42:28.547467+00:00",
+      "guideline_id": "14FqLHmeXd",
+      "tag_id": "lBasb1M7T4"
+    },
+    {
+      "id": "oHdxnbmyF6",
+      "version": "0.4.0",
+      "creation_utc": "2025-05-20T10:56:02.759250+00:00",
+      "guideline_id": "vSbbPU5iKO",
+      "tag_id": "journey:BiYuoerl41"
     }
   ]
 }

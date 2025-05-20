@@ -40,6 +40,13 @@
       "creation_utc": "2025-05-12T23:07:20.640457+00:00",
       "guideline_id": "wQVHEFGZvG",
       "tool_id": "appointments:get_patient_data"
+    },
+    {
+      "id": "Bji04yuaEP",
+      "version": "0.1.0",
+      "creation_utc": "2025-05-19T21:48:19.622886+00:00",
+      "guideline_id": "UFTzf6wmpG",
+      "tool_id": "prescriptions:create_auth_request"
     }
   ]
 }

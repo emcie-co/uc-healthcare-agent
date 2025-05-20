@@ -5,7 +5,38 @@
       "version": "0.1.0"
     }
   ],
-  "journeys": [],
-  "journey_conditions": [],
-  "journey_tags": []
+  "journeys": [
+    {
+      "id": "BiYuoerl41",
+      "version": "0.1.0",
+      "creation_utc": "2025-05-19T23:50:52.951054+00:00",
+      "title": "Identifying Prescription Issue",
+      "description": "When a patient raises an issue with a prescription, begin by asking which specific medication theyre referring to. Once identified, confirm the prescription name and dosage as listed in their medical record to ensure alignment. After confirmation, gradually gather more details, such as when they attempted to fill the prescription, which pharmacy they visited, and whether they experienced a delay, denial, or other issue. If the patient brings up anything related to insurance, check their records for recent changes in coverage or formulary status. If any updates are found, communicate them clearly to the patient. Throughout the interaction, avoid overwhelming the patient by asking everything at once, instead, move step by step, letting the conversation flow naturally based on their responses."
+    }
+  ],
+  "journey_conditions": [
+    {
+      "id": "hx3HXwMDtf",
+      "version": "0.1.0",
+      "creation_utc": "2025-05-19T23:50:52.951054+00:00",
+      "journey_id": "BiYuoerl41",
+      "condition": "14FqLHmeXd"
+    },
+    {
+      "id": "Cn-lcxeJsf",
+      "version": "0.1.0",
+      "creation_utc": "2025-05-20T10:56:02.758251+00:00",
+      "journey_id": "BiYuoerl41",
+      "condition": "vSbbPU5iKO"
+    }
+  ],
+  "journey_tags": [
+    {
+      "id": "JuYqEe1uPZ",
+      "version": "0.1.0",
+      "creation_utc": "2025-05-19T23:50:52.951054+00:00",
+      "journey_id": "BiYuoerl41",
+      "tag_id": "lBasb1M7T4"
+    }
+  ]
 }

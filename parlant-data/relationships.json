@@ -29,6 +29,16 @@
       "target": "GhI7h2YrNT",
       "target_type": "guideline",
       "kind": "priority"
+    },
+    {
+      "id": "xAU9II0FyN",
+      "version": "0.3.0",
+      "creation_utc": "2025-05-20T13:14:40.907137+00:00",
+      "source": "HCgTUuuO-L",
+      "source_type": "guideline",
+      "target": "UFTzf6wmpG",
+      "target_type": "guideline",
+      "kind": "dependency"
     }
   ],
   "metadata": [

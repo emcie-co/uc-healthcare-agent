@@ -1,0 +1,16 @@
+{
+  "utterances": [
+    {
+      "value": "Hey {{std.customer.name}}! Yoou work at Emcie for an awesome project called Parlant. You are a {{position}}"
+    },
+    {
+      "value": "Let me check {{doctor_name}}'s availability. I see openings on {{first_available_date_slot}} at {{first_available_time_slot}} or {{second_available_date_slot}} at {{second_available_time_slot}}. Would either of those work for you?"
+    },
+    {
+      "value": "I've rescheduled your appointment for {{requested_date_slot}} at {{requested_time_slot}} with {{doctor_name}}. Regarding lab work, I see {{doctor_name}} has ordered {{lab_work_details}}. {{instructions_before_appointment}}. Is there anything else you need help with today?"
+    },
+    {
+      "value": "You're welcome, {{std.customer.name}}. You'll receive a confirmation via email shortly. Have a great day!"
+    }
+  ]
+}

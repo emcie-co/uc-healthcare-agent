@@ -172,5 +172,64 @@
             },
             "patients": []
         }
+    },
+    {
+        "doctor": {
+            "name": "Dr. Ramirez",
+            "specialty": "Family Medicine",
+            "practice_details": {
+                "ordering_privileges": [
+                    "lisinopril",
+                    "other medications"
+                ]
+            },
+            "scheduling": {
+                "availability": [
+                    {
+                        "date": "2025-04-08",
+                        "times": [
+                            "13:30"
+                        ]
+                    },
+                    {
+                        "date": "2025-04-15",
+                        "times": [
+                            "10:00"
+                        ]
+                    }
+                ],
+                "appointment_duration": 45,
+                "preparation_requirements": {
+                    "annual_physical": "fasting 8-12 hours before appointment"
+                }
+            },
+            "patients": [
+                {
+                    "patient_id": "NAdszZp77U",
+                    "name": "John Patel",
+                    "relationship": "primary care",
+                    "last_visit": null,
+                    "upcoming_appointments": [
+                        {
+                            "date": "2025-04-15",
+                            "time": "10:00",
+                            "type": "annual physical",
+                            "lab_work_ordered": "--lisinopril prescription",
+                            "status": "scheduled"
+                        }
+                    ],
+                    "requests": [
+                        {
+                            "type": "medication authorization",
+                            "medication": "lisinopril",
+                            "message": "Patient prefers to remain on lisinopril despite insurance formulary change to losartan. Requesting authorization for continued use.",
+                            "status": "pending",
+                            "priority": "standard",
+                            "process_time": "2-3 business days"
+                        }
+                    ]
+                }
+            ]
+        }
     }
 ]

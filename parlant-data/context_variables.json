@@ -22,6 +22,13 @@
       "creation_utc": "2025-05-13T10:48:57.716899+00:00",
       "variable_id": "NCTFRlKagl",
       "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "6PwcqxPayV",
+      "version": "0.2.0",
+      "creation_utc": "2025-05-19T18:48:12.237588+00:00",
+      "variable_id": "NCTFRlKagl",
+      "tag_id": "lBasb1M7T4"
     }
   ],
   "values": [
@@ -34,9 +41,9 @@
       "data": null
     },
     {
-      "id": "PK7MI0NoO7",
+      "id": "OZk7i1c-DL",
       "version": "0.2.0",
-      "last_modified": "2025-05-13T12:18:19.269168+00:00",
+      "last_modified": "2025-05-18T15:28:50.717001+00:00",
       "variable_id": "NCTFRlKagl",
       "key": "C9XHUuuk1J",
       "data": {
@@ -78,6 +85,91 @@
           "provider": null,
           "plan": null,
           "coverage_details": null,
+          "referrals_required": null
+        }
+      }
+    },
+    {
+      "id": "QRzO4L7R6C",
+      "version": "0.2.0",
+      "last_modified": "2025-05-20T13:15:19.978993+00:00",
+      "variable_id": "NCTFRlKagl",
+      "key": "NAdszZp77U",
+      "data": {
+        "patient_id": "NAdszZp77U",
+        "name": "John Patel",
+        "contact": {
+          "email": null,
+          "phone": "555-123-4567"
+        },
+        "medical_info": {
+          "doctors": [
+            "Dr. Ramirez"
+          ],
+          "appointments": [
+            {
+              "doctor": "Dr. Ramirez",
+              "type": "annual physical",
+              "date": "2025-04-15",
+              "time": "10:00",
+              "location": null,
+              "preparation": "fast 8-12 hours before appointment"
+            }
+          ],
+          "lab_work": [
+            {
+              "type": "bloodwork",
+              "ordered_by": "Dr. Ramirez",
+              "date": "2025-04-15",
+              "instructions": null,
+              "fasting_required": true
+            }
+          ],
+          "medications": [
+            {
+              "name": "lisinopril",
+              "dosage": "10mg",
+              "purpose": "blood pressure",
+              "prescription_status": "active",
+              "refills_remaining": null,
+              "last_refill_date": null,
+              "pharmacy": {
+                "name": "Walgreens",
+                "location": "Oak Street"
+              }
+            },
+            {
+              "name": "metformin",
+              "dosage": "500mg",
+              "purpose": "type 2 diabetes",
+              "prescription_status": "active",
+              "supply_remaining": "14 pills",
+              "refills_remaining": 2,
+              "last_refill_date": "2025-04-10",
+              "pharmacy": {
+                "name": "CVS Pharmacy",
+                "location": "Maple Avenue"
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "name": "hypertension",
+              "treating_doctor": "Dr. Ramirez",
+              "medications": [
+                "lisinopril"
+              ]
+            }
+          ],
+          "allergies": [],
+          "requests": []
+        },
+        "insurance_info": {
+          "provider": null,
+          "plan": null,
+          "coverage_updates": {
+            "formulary_changes": "no longer covers lisinopril, prefers losartan"
+          },
           "referrals_required": null
         }
       }

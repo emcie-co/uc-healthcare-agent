@@ -32,6 +32,13 @@
       "creation_utc": "2025-03-16T11:54:46.217390+00:00",
       "agent_id": "4HZ5qLnx2V",
       "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "VIRbev7GfN",
+      "version": "0.3.0",
+      "creation_utc": "2025-05-19T17:18:55.498106+00:00",
+      "agent_id": "4HZ5qLnx2V",
+      "tag_id": "lBasb1M7T4"
     }
   ]
 }

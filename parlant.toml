@@ -1,5 +1,6 @@
 [parlant]
 
 modules = [
-    "modules.appointments.module"
+    "modules.appointments.module",
+    "modules.prescriptions.module"
 ]

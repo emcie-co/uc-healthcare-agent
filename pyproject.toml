@@ -12,6 +12,7 @@ onnxruntime = "1.21.1"
 
 parlant = { git = "https://github.com/emcie-co/parlant", branch = "develop" }
 
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

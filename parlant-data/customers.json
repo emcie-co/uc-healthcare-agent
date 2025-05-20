@@ -12,6 +12,13 @@
       "creation_utc": "2025-03-16T12:08:00.588981+00:00",
       "name": "Sarah Johnson",
       "extra": {}
+    },
+    {
+      "id": "NAdszZp77U",
+      "version": "0.1.0",
+      "creation_utc": "2025-05-19T17:21:26.689192+00:00",
+      "name": "John Patel",
+      "extra": {}
     }
   ],
   "customer_tag_associations": [
@@ -28,6 +35,13 @@
       "creation_utc": "2025-04-08T11:57:16.607393+00:00",
       "customer_id": "HhfpIu56au",
       "tag_id": "9b6t8F2o8V"
+    },
+    {
+      "id": "AgEcPVDB6p",
+      "version": "0.2.0",
+      "creation_utc": "2025-05-19T17:21:26.689192+00:00",
+      "customer_id": "NAdszZp77U",
+      "tag_id": "lBasb1M7T4"
     }
   ]
 }

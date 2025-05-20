@@ -42,5 +42,94 @@
                 "referrals_required": null
             }
         }
+    },
+    {
+        "patient": {
+            "patient_id": "NAdszZp77U",
+            "name": "John Patel",
+            "contact": {
+                "email": null,
+                "phone": "555-123-4567"
+            },
+            "medical_info": {
+                "doctors": [
+                    "Dr. Ramirez"
+                ],
+                "appointments": [
+                    {
+                        "doctor": "Dr. Ramirez",
+                        "type": "annual physical",
+                        "date": "2025-04-15",
+                        "time": "10:00",
+                        "location": null,
+                        "preparation": "fast 8-12 hours before appointment"
+                    }
+                ],
+                "lab_work": [
+                    {
+                        "type": "bloodwork",
+                        "ordered_by": "Dr. Ramirez",
+                        "date": "2025-04-15",
+                        "instructions": null,
+                        "fasting_required": true
+                    }
+                ],
+                "medications": [
+                    {
+                        "name": "lisinopril",
+                        "dosage": "10mg",
+                        "purpose": "blood pressure",
+                        "prescription_status": "active",
+                        "refills_remaining": null,
+                        "last_refill_date": null,
+                        "pharmacy": {
+                            "name": "Walgreens",
+                            "location": "Oak Street"
+                        }
+                    },
+                    {
+                        "name": "metformin",
+                        "dosage": "500mg",
+                        "purpose": "type 2 diabetes",
+                        "prescription_status": "active",
+                        "supply_remaining": "14 pills",
+                        "refills_remaining": 2,
+                        "last_refill_date": "2025-04-10",
+                        "pharmacy": {
+                            "name": "CVS Pharmacy",
+                            "location": "Maple Avenue"
+                        }
+                    }
+                ],
+                "conditions": [
+                    {
+                        "name": "hypertension",
+                        "treating_doctor": "Dr. Ramirez",
+                        "medications": [
+                            "lisinopril"
+                        ]
+                    }
+                ],
+                "allergies": [],
+                "requests": [
+                    {
+                        "type": "medication authorization",
+                        "medication": "lisinopril",
+                        "message": "Patient prefers to remain on lisinopril despite insurance formulary change to losartan. Requesting authorization for continued use.",
+                        "status": "pending",
+                        "priority": "standard",
+                        "process_time": "2-3 business days"
+                    }
+                ]
+            },
+            "insurance_info": {
+                "provider": null,
+                "plan": null,
+                "coverage_updates": {
+                    "formulary_changes": "no longer covers lisinopril, prefers losartan"
+                },
+                "referrals_required": null
+            }
+        }
     }
 ]
